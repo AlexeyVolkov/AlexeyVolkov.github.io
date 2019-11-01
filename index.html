@@ -31,35 +31,9 @@
             <option>Deuteranomaly</option>
             <option>Deuteranomaly</option>
         </datalist>
-        <hr>
-        <table>
-            <caption>Data found via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator"
-                                       title="Open Mozilla website" rel="nofollow noopener">Navigator API</a></caption>
-            <thead>
-            <tr>
-                <td>Function</td>
-                <td>Value</td>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>DoNotTrack</td>
-                <td id="user_info__dnt">-</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td id="user_info__js">off</td>
-            </tr>
-            <tr>
-                <td>Browser Language</td>
-                <td id="user_info__lang">-</td>
-            </tr>
-            <tr>
-                <td>Operation System</td>
-                <td id="user_info__os">-</td>
-            </tr>
-            </tbody>
-        </table>
+    </aside>
+    <hr>
+    <main>
         <nav class="site_menu">
             <ul>
                 <li><a href="#content">Product page</a></li>
@@ -100,51 +74,59 @@
                 <li><a href="#cognitive">Products</a></li>
             </ul>
         </nav>
-    </aside>
+    </main>
 </header>
 <hr>
 <main id="content">
-    <form id="right_dateForm">
-        <fieldset>
-            <legend>Pleasure Delivery</legend>
-            <label for="city__input">City:</label>
-            <input type="text" id="city__input" name="city__input" list="cityList" placeholder="Tbilisi"
-                   autocomplete="on" maxlength="25" minlength="1" pattern="[^±!@£$№#%^&*_+§¡€#¢§¶•ªº«\\/<>?:;|=,0-9]+"
-                   title="Write city">
-            <datalist id="cityList">
-                <label for="city__select">or choose here:</label>
-                <select id="city__select" name="city__select" class="city__select" autocomplete="on">
-                    <optgroup label="Asia">
-                        <option value="Delhi">Delhi</option>
-                        <option value="Hong-Kong">Hong Kong</option>
-                        <option value="Mumbai">Mumbai</option>
-                        <option value="Tokyo">Tokyo</option>
-                    </optgroup>
-                    <optgroup label="Europe">
-                        <option value="Amsterdam">Amsterdam</option>
-                        <option value="London">London</option>
-                        <option value="Moscow">Moscow</option>
-                        <option value="Tbilisi">Tbilisi</option>
-                    </optgroup>
-                    <optgroup label="North America">
-                        <option value="Los-Angeles">Los Angeles</option>
-                        <option value="New-York">New York</option>
-                    </optgroup>
-                    <optgroup label="South America">
-                        <option value="Buenos-Aires">Buenos Aires</option>
-                        <option value="Sao-Paulo">Sao Paulo</option>
-                    </optgroup>
-                </select>
-            </datalist>
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date"
-                   value="2022-11-22"
-                   min="2019-01-01"
-                   max="2029-01-01"
-                   autocomplete="on" title="Choose or write date">
-        </fieldset>
-        <input type="submit" value="Send" name="submit">
-    </form>
+    <div class="row">
+        <section>
+
+        </section>
+        <section>
+            <form id="right_dateForm" action="" class="rigth_form">
+                <fieldset>
+                    <legend>Pleasure Delivery</legend>
+                    <label for="city__input">City:</label>
+                    <input type="text" id="city__input" name="city__input" list="cityList" placeholder="Tbilisi"
+                           autocomplete="on" maxlength="25" minlength="1"
+                           pattern="[^±!@£$№#%^&*_+§¡€#¢§¶•ªº«\\/<>?:;|=,0-9]+"
+                           title="Write city">
+                    <datalist id="cityList">
+                        <label for="city__select">or choose here:</label>
+                        <select id="city__select" name="city__select" class="city__select" autocomplete="on">
+                            <optgroup label="Asia">
+                                <option value="Delhi">Delhi</option>
+                                <option value="Hong-Kong">Hong Kong</option>
+                                <option value="Mumbai">Mumbai</option>
+                                <option value="Tokyo">Tokyo</option>
+                            </optgroup>
+                            <optgroup label="Europe">
+                                <option value="Amsterdam">Amsterdam</option>
+                                <option value="London">London</option>
+                                <option value="Moscow">Moscow</option>
+                                <option value="Tbilisi">Tbilisi</option>
+                            </optgroup>
+                            <optgroup label="North America">
+                                <option value="Los-Angeles">Los Angeles</option>
+                                <option value="New-York">New York</option>
+                            </optgroup>
+                            <optgroup label="South America">
+                                <option value="Buenos-Aires">Buenos Aires</option>
+                                <option value="Sao-Paulo">Sao Paulo</option>
+                            </optgroup>
+                        </select>
+                    </datalist>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date"
+                           value="2022-11-22"
+                           min="2019-01-01"
+                           max="2029-01-01"
+                           autocomplete="on" title="Choose or write date">
+                </fieldset>
+                <input type="submit" value="Send" name="submit">
+            </form>
+        </section>
+    </div>
     <hr>
     <figure>
         <img src="images/white_sneakers.jpg" alt="">
@@ -297,6 +279,36 @@
     <h2>Hire me!</h2>
     <p>Me is looking for a job!</p>
     <hr>
+    <aside>
+        <table>
+            <caption>Data found via <a href="https://developer.mozilla.org/en-US/docs/Web/API/Navigator"
+                                       title="Open Mozilla website" rel="nofollow noopener">Navigator API</a></caption>
+            <thead>
+            <tr>
+                <td>Function</td>
+                <td>Value</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>DoNotTrack</td>
+                <td id="user_info__dnt">-</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td id="user_info__js">off</td>
+            </tr>
+            <tr>
+                <td>Browser Language</td>
+                <td id="user_info__lang">-</td>
+            </tr>
+            <tr>
+                <td>Operation System</td>
+                <td id="user_info__os">-</td>
+            </tr>
+            </tbody>
+        </table>
+    </aside>
 </footer>
 
 <script src="js/cookie.js"></script>
