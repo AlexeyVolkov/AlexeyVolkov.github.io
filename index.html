@@ -43,82 +43,23 @@
 </datalist>
 </aside>
 <div class="main">
-<nav class="site_menu">
-<ul>
-<li>
-<a href="#content">Product page</a>
-</li>
-<li>
-<a href="#blog">Blog page</a>
-</li>
-<li>
-<a href="#contact">Contact me</a>
-</li>
-</ul>
-</nav>
-<nav class="menu">
-<ul>
-<li>
-<a href="#visual">Hygiene and care</a>
-<ul>
-<li>
-<a href="#personal">Personal hygiene</a>
-</li>
-<li>
-<a href="#household">Household hygiene</a>
-</li>
-<li>
-<a href="#pet">Pet hygiene</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#auditory">Everyday life</a>
-<ul>
-<li>
-<a href="#captions">Parenting tips</a>
-</li>
-<li>
-<a href="#captions">Organising the home</a>
-</li>
-<li>
-<a href="#captions">Keeping tips</a>
-</li>
-<li>
-<a href="#captions">Recycle</a>
-</li>
-</ul>
-</li>
-<li>
-<a href="#motor">Everyday fun</a>
-<ul>
-<li>
-<a href="#level2">Crafting ideas</a>
-<ul>
-<li>
-<a href="#level3">Toilet paper origami</a>
-<ul>
-<li>
-<a href="#level4">Swan</a>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<a href="#cognitive">Products</a>
-</li>
-</ul>
-</nav>
 </div>
 </header>
-<hr>
 <main id="content">
 <div class="row">
-<section></section>
 <section>
+<h2>Wrong Form</h2>
+<form>
+<h4>Pleasure Delivery</h4>
+<label>City:</label>
+<input placeholder="Tbilisi" type="text">
+<label>Date</label>
+<input placeholder="2022-11-22" type="text" value="2022-11-22">
+<input name="submit" type="submit" value="Send">
+</form>
+</section>
+<section>
+<h2>Right form</h2>
 <form class="rigth_form" id="right_dateForm">
 <fieldset>
 <legend>Pleasure Delivery</legend>
@@ -159,9 +100,11 @@
 <hr>
 <div class="row">
 <section>
+<h2>Wrong Image</h2>
 <img src="images/white_sneakers.jpg">
 </section>
 <section>
+<h2>Right Image</h2>
 <figure>
 <img alt="" src="images/white_sneakers.jpg">
 <figcaption>Legs in white sneakers on the table</figcaption>
@@ -171,17 +114,62 @@
 <hr>
 <div class="row">
 <section>
+<h2>Wrong Link</h2>
 <a class="wrong_link" href="#link.pdf">Report Sample</a>
 </section>
 <section>
+<h2>Right Link</h2>
 <a href="#link.pdf" rel="nofollow noopener" title="Download Report">Report Sample</a>
 </section>
 </div>
 <hr>
 <div class="row">
-<section></section>
 <section>
-<h2>Contact Form</h2>
+<h2>Wrong Form</h2>
+<form enctype="multipart/form-data" method="post" name="contact_form" onsubmit="return validateForm()">
+<h4>Gender</h4>
+<select name="gender" title="Choose one gender">
+<option value="man">Man/Male/Masculine</option>
+<option value="woman">Woman/Female/Feminine</option>
+<option value="Agender">Agender</option>
+<option value="Bi-Gendered">Bi-Gendered</option>
+<option value="Butch">Butch</option>
+<option value="Female-to-Male">Female-to-Male</option>
+<option value="Femme">Femme</option>
+<option value="gender-diverse">Gender Diverse</option>
+<option value="Gender-Fluid">Gender Fluid</option>
+<option value="Gender-queer">Gender queer</option>
+<option value="Male-To-Female">Male-To-Female</option>
+<option value="Person-of-Transgender-Experience">Person of Transgender</option>
+<option value="Pangender">Pangender</option>
+<option value="other">My gender is not in the list</option>
+</select>
+<label>Other:</label>
+<input type="text" value="Write your own gender">
+<h4>Contact details</h4>
+<label>Name *</label>
+<input type="text" value="How should we call you?">
+<label>E-mail *</label>
+<input type="text" value="Type whole E-Mail">
+<h4>Address</h4>
+<label>Phone *</label>
+<input type="text" value="Type whole phone number [Russian Format]">
+<div class="flex-row">
+<input name="delivery" type="radio" value="delivery">
+<label>Delivery</label>
+</div>
+<div class="flex-row">
+<input name="delivery" type="radio" value="take_away">
+<label>Pickup</label>
+</div>
+<label>Comments</label>
+<textarea name="comments"></textarea>
+<button name="send" type="button">Send</button>
+</form>
+</section>
+<section>
+<h2>Right Form</h2>
+<h2>Contact Us</h2>
 <h4>We are waiting for your applications</h4>
 <form enctype="multipart/form-data" method="post" name="contact_form" onsubmit="return validateForm()">
 <fieldset class="form-group">
@@ -268,7 +256,6 @@ fields in order to contact you.
 John Doe:
 <br>
 <a href="https://vk.com/id0" rel="noopener" title="Open John&#39;s VK Page">VK</a>
-|
 <a href="https://fb.com/" rel="noopener" title="Open John&#39;s FB Page">FB</a>
 </p>
 </section>
@@ -302,51 +289,62 @@ ul. Lva Tolstogo, 16
 </section>
 </div>
 <div class="row">
-<section></section>
 <section>
-<h4>No image</h4>
-<article>
-<figure>
-<img alt="Turbo Clean 3000" src="">
-<figcaption>
-<p>Average 157 sheets per roll</p>
-<p>Average sheet size 118 x 104 mm</p>
-<p>Average roll length 18.5 m</p>
+<h2>Wrong Article</h2>
 <p>
-Free give-away will be at
-<a href="https://www.timeanddate.com/worldclock/fixedtime.html?iso=20241224T193001">
-<abbr class="date" title="2024-12-24T19:30:01+00:00">19:30</abbr>
-</a>
-</p>
-</figcaption>
-</figure>
-</article>
-</section>
-</div>
-<div class="row">
-<section></section>
-<section>
-<h2>Article</h2>
-<article>
-<p>
-<img alt="" src="">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod auctor
-tincidunt. Aenean eu porta neque, sit amet condimentum leo. Donec justo eros, viverra ut
-auctor feugiat, mollis vitae leo. Vestibulum eleifend est urna, at imperdiet ex aliquam
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod auctor tincidunt. Aenean eu porta neque, sit amet condimentum leo. Donec justo eros, viverra ut uctor feugiat, mollis vitae leo. Vestibulum eleifend est urna, at imperdiet ex aliquam
 volutpat.
-<a href="/files/doc.pdf" title="Quisque dolor nisl [PDF]">Quisque dolor nisl</a>,
-<a href="/files/doc.txt" title="Phasellus interdum ultricies lectus [TXT]">
-Phasellus interdum
-ultricies lectus
-</a>,
-</p>
+<img alt="" class="wrong" src="">
+<a class="wrong" href="/files/doc.pdf" title="Quisque dolor nisl [PDF]">Quisque dolor nisl</a>
+,
+<a class="wrong" href="/files/doc.txt" title="Phasellus interdum ultricies lectus [TXT]">Phasellus interdum ultricies lectus</a>
+.
 <p>
-<img alt="" src="">
 Nam euismod ipsum et metus
 condimentum iaculis ac nec ante.
-<a href="#" target="_blank">Nullam ipsum turpis</a>,
-<a href="/files/doc.pdf" rel="noopener" target="_blank" title="Nunc enim leo [PDF] (in a new window)">Nunc                  enim leo</a>,
-<a href="/files/doc.txt" rel="noopener" target="_blank" title="Curabitur ex risus [TXT] (in a new window)">Curabitur ex risus</a>,
+<img alt="" class="wrong" src="">
+<a class="wrong" href="#" target="_blank">Nullam ipsum turpis.</a>
+Morbi ex metus, condimentum porta gravida eu, luctus nec velit.
+<a class="wrong" href="/files/doc.pdf" rel="noopener" target="_blank" title="Nunc enim leo [PDF] (in a new window)">Nulla facilisi.</a>
+Duis cursus, nisi ac pharetra luctus, lacus augue blandit diam, at vulputate nisl ante vitae est. Proin purus urna, auctor rutrum nisl eu, venenatis vulputate libero.
+<a class="wrong" href="/files/doc.txt" rel="noopener" target="_blank" title="Curabitur ex risus [TXT] (in a new window)">Mauris eu volutpat quam, at mattis tortor.</a>
+Vivamus rhoncus, justo ac ultrices tempor, leo nulla sollicitudin risus, et scelerisque nunc nulla eget nunc. Pellentesque ultrices in dolor a sodales.
+<img alt="" class="wrong" src="">
+Integer felis risus, blandit ut vulputate id, consectetur mollis felis. Nam molestie diam ut mauris ultrices semper. Phasellus venenatis est urna. Nulla interdum felis non quam sagittis, vel eleifend risus consectetur. Vivamus mollis urna in nisl faucibus mollis. Suspendisse nibh magna, blandit quis leo eget, fermentum egestas justo. Vivamus tincidunt nulla eu aliquam viverra. Cras at suscipit sem. Duis eleifend tortor a purus luctus congue sit amet eu orci.
+</p>
+<p>
+Integer molestie sem dui, a varius ipsum tempus id. Praesent nec congue velit. Sed consectetur tellus risus, at vestibulum nisi mattis vel. Nulla facilisi. Pellentesque egestas egestas lorem, vitae semper nisi pretium nec. Suspendisse potenti. Pellentesque congue mauris magna, quis tempor quam consectetur quis. Nunc auctor risus et tristique vestibulum. Mauris rhoncus pulvinar enim eget pretium. Donec ornare odio nec magna volutpat sodales. Integer ut cursus augue, nec efficitur leo. Ut malesuada nisi odio, nec semper ipsum egestas vel. Mauris viverra consequat tellus, auctor maximus erat dignissim sed. Pellentesque fermentum massa ac nulla ullamcorper dapibus. Donec rhoncus varius accumsan. Morbi pretium risus ligula, ac sodales diam mattis sit amet.
+</p>
+</p>
+</section>
+<section>
+<h2>Right Article</h2>
+<h4>Article</h4>
+<article>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod auctor tincidunt. Aenean eu porta neque, sit amet condimentum leo. Donec justo eros, viverra ut uctor feugiat, mollis vitae leo. Vestibulum eleifend est urna, at imperdiet ex aliquam
+volutpat.
+<img alt="" src="">
+<a href="/files/doc.pdf" title="Quisque dolor nisl [PDF]">Quisque dolor nisl</a>
+,
+<a href="/files/doc.txt" title="Phasellus interdum ultricies lectus [TXT]">Phasellus interdum ultricies lectus</a>
+.
+</p>
+<p>
+Nam euismod ipsum et metus
+condimentum iaculis ac nec ante.
+<img alt="" src="">
+<a href="#" target="_blank">Nullam ipsum turpis.</a>
+Morbi ex metus, condimentum porta gravida eu, luctus nec velit.
+<a href="/files/doc.pdf" rel="noopener" target="_blank" title="Nunc enim leo [PDF] (in a new window)">Nulla facilisi.</a>
+Duis cursus, nisi ac pharetra luctus, lacus augue blandit diam, at vulputate nisl ante vitae est. Proin purus urna, auctor rutrum nisl eu, venenatis vulputate libero.
+<a href="/files/doc.txt" rel="noopener" target="_blank" title="Curabitur ex risus [TXT] (in a new window)">Mauris eu volutpat quam, at mattis tortor.</a>
+Vivamus rhoncus, justo ac ultrices tempor, leo nulla sollicitudin risus, et scelerisque nunc nulla eget nunc. Pellentesque ultrices in dolor a sodales.
+<img alt="" src="">
+Integer felis risus, blandit ut vulputate id, consectetur mollis felis. Nam molestie diam ut mauris ultrices semper. Phasellus venenatis est urna. Nulla interdum felis non quam sagittis, vel eleifend risus consectetur. Vivamus mollis urna in nisl faucibus mollis. Suspendisse nibh magna, blandit quis leo eget, fermentum egestas justo. Vivamus tincidunt nulla eu aliquam viverra. Cras at suscipit sem. Duis eleifend tortor a purus luctus congue sit amet eu orci.
+</p>
+<p>
+Integer molestie sem dui, a varius ipsum tempus id. Praesent nec congue velit. Sed consectetur tellus risus, at vestibulum nisi mattis vel. Nulla facilisi. Pellentesque egestas egestas lorem, vitae semper nisi pretium nec. Suspendisse potenti. Pellentesque congue mauris magna, quis tempor quam consectetur quis. Nunc auctor risus et tristique vestibulum. Mauris rhoncus pulvinar enim eget pretium. Donec ornare odio nec magna volutpat sodales. Integer ut cursus augue, nec efficitur leo. Ut malesuada nisi odio, nec semper ipsum egestas vel. Mauris viverra consequat tellus, auctor maximus erat dignissim sed. Pellentesque fermentum massa ac nulla ullamcorper dapibus. Donec rhoncus varius accumsan. Morbi pretium risus ligula, ac sodales diam mattis sit amet.
 </p>
 </article>
 </section>
