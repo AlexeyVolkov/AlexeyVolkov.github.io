@@ -48,18 +48,7 @@
 <main id="content">
 <div class="row">
 <section>
-<h2>Wrong Form</h2>
-<form>
-<h4>Pleasure Delivery</h4>
-<label>City:</label>
-<input placeholder="Tbilisi" type="text">
-<label>Date</label>
-<input placeholder="2022-11-22" type="text" value="2022-11-22">
-<input name="submit" type="submit" value="Send">
-</form>
-</section>
-<section>
-<h2>Right form</h2>
+<h2>Forms</h2>
 <form class="rigth_form" id="right_dateForm">
 <fieldset>
 <legend>Pleasure Delivery</legend>
@@ -96,79 +85,107 @@
 <input name="submit" type="submit" value="Send">
 </form>
 </section>
+<section>
+<aside class="code">
+<h4>Code</h4>
+<pre class="prettyprint"><code class="language-html">&lt;form&gt;
+&lt;fieldset&gt;
+&lt;legend&gt;Pleasure Delivery&lt;/legend&gt;
+&lt;label for=&quot;city__input&quot;&gt;City:&lt;/label&gt;
+&lt;input autocomplete=&quot;on&quot; id=&quot;city__input&quot; list=&quot;cityList&quot; maxlength=&quot;25&quot; minlength=&quot;1&quot; name=&quot;city__input&quot; pattern=&quot;[^&#177;!@&#163;$№#%^*_+&#167;&#161;€#&#162;&#167;&#182;•&#170;&#186;&#171;\\/&lt;&gt;?:;|=,0-9]+&quot; placeholder=&quot;Tbilisi&quot; title=&quot;Write city&quot; type=&quot;text&quot;&gt;
+&lt;datalist id=&quot;cityList&quot;&gt;
+&lt;label for=&quot;city__select&quot;&gt;or choose here:&lt;/label&gt;
+&lt;select autocomplete=&quot;on&quot; class=&quot;city__select&quot; id=&quot;city__select&quot; name=&quot;city__select&quot;&gt;
+&lt;optgroup label=&quot;Asia&quot;&gt;
+&lt;option value=&quot;Delhi&quot;&gt;Delhi&lt;/option&gt;
+&lt;option value=&quot;Hong-Kong&quot;&gt;Hong Kong&lt;/option&gt;
+&lt;option value=&quot;Mumbai&quot;&gt;Mumbai&lt;/option&gt;
+&lt;option value=&quot;Tokyo&quot;&gt;Tokyo&lt;/option&gt;
+&lt;/optgroup&gt;
+&lt;/select&gt;
+&lt;/datalist&gt;
+&lt;label for=&quot;date&quot;&gt;Date&lt;/label&gt;
+&lt;input autocomplete=&quot;on&quot; id=&quot;date&quot; max=&quot;2029-01-01&quot; min=&quot;2019-01-01&quot; name=&quot;date&quot; title=&quot;Choose or write date&quot; type=&quot;date&quot; value=&quot;2022-11-22&quot;&gt;
+&lt;/fieldset&gt;
+&lt;input name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Send&quot;&gt;
+&lt;/form&gt;</code></pre>
+</aside>
+<aside class="notice">
+<h4>Links</h4>
+<ul>
+<li>
+<a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G131.html" title="WCAG 2.1 Success Criterion 2.4.6: Headings and Labels">Providing descriptive labels</a>
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date" title="developer.mozilla.org">Date picker</a>
+</li>
+</ul>
+</aside>
+</section>
 </div>
 <hr>
 <div class="row">
 <section>
-<h2>Wrong Image</h2>
-<img src="images/white_sneakers.jpg">
-</section>
-<section>
-<h2>Right Image</h2>
-<figure>
-<img alt="" src="images/white_sneakers.jpg">
-<figcaption>Legs in white sneakers on the table</figcaption>
+<h2>Images</h2>
+<figure aria="Check out my new sneakers" role="figure">
+<img alt="Legs in white sneakers on the table" src="images/white_sneakers.jpg">
+<figcaption id="figure-1">Check out my new sneakers.</figcaption>
 </figure>
 </section>
+<section>
+<aside class="code">
+<h4>Code</h4>
+<pre class="prettyprint"><code class="language-html">&lt;figure aria=&quot;Check out my new sneakers&quot; role=&quot;figure&quot;&gt;
+&lt;img alt=&quot;Legs in white sneakers on the table&quot; src=&quot;images/white_sneakers.jpg&quot;&gt;
+&lt;figcaption id=&quot;figure-1&quot;&gt;Check out my new sneakers.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+</aside>
+<aside class="notice">
+<h4>Links</h4>
+<ul>
+<li>
+<a href="https://www.w3.org/TR/2014/WD-html-alt-techniques-20141023/#images-of-pictures-1" title="W3C">Techniques for providing useful text alternatives</a>
+</li>
+<li>
+<a href="https://webaim.org/techniques/alttext/" title="webaim">Alt text in any cases</a>
+</li>
+</ul>
+</aside>
+</section>
 </div>
 <hr>
 <div class="row">
 <section>
-<h2>Wrong Link</h2>
-<a class="wrong_link" href="#link.pdf">Report Sample</a>
+<h2>Links</h2>
+Email me:
+<a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&amp;bcc=lastperson@theirsite.com&amp;subject=Big%20News&amp;body=Body-goes-here" rel="nofollow noopener" title="Write an email">someone@yoursite.com</a>
+!
 </section>
 <section>
-<h2>Right Link</h2>
-<a href="#link.pdf" rel="nofollow noopener" title="Download Report">Report Sample</a>
+<aside class="code">
+<h4>Code</h4>
+<pre class="prettyprint"><code class="language-html">&lt;a href=&quot;mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&amp;amp;bcc=lastperson@theirsite.com&amp;amp;subject=Big%20News&amp;amp;body=Body-goes-here&quot; rel=&quot;nofollow noopener&quot; title=&quot;Download Report&quot;&gt;Email me!&lt;/a&gt;</code></pre>
+</aside>
+<aside class="notice">
+<h4>Links</h4>
+<ul>
+<li>
+<a href="https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/" title="jitbit.com - Target=&quot;_blank&quot; - the most underestimated vulnerability ever">Use target="_blank" ... never</a>
+</li>
+<li>
+<a href="https://webaim.org/techniques/hypertext/hypertext_links" title="WebAIM - Links and Hypertext">WebAIM: Links</a>
+</li>
+<li>
+<a href="https://www.w3.org/TR/WCAG20-TECHS/G201.html" title="W3C">Warn users about target="_blank"</a>
+</li>
+</ul>
+</aside>
 </section>
 </div>
 <hr>
 <div class="row">
 <section>
-<h2>Wrong Form</h2>
-<form enctype="multipart/form-data" method="post" name="contact_form" onsubmit="return validateForm()">
-<h4>Gender</h4>
-<select name="gender" title="Choose one gender">
-<option value="man">Man/Male/Masculine</option>
-<option value="woman">Woman/Female/Feminine</option>
-<option value="Agender">Agender</option>
-<option value="Bi-Gendered">Bi-Gendered</option>
-<option value="Butch">Butch</option>
-<option value="Female-to-Male">Female-to-Male</option>
-<option value="Femme">Femme</option>
-<option value="gender-diverse">Gender Diverse</option>
-<option value="Gender-Fluid">Gender Fluid</option>
-<option value="Gender-queer">Gender queer</option>
-<option value="Male-To-Female">Male-To-Female</option>
-<option value="Person-of-Transgender-Experience">Person of Transgender</option>
-<option value="Pangender">Pangender</option>
-<option value="other">My gender is not in the list</option>
-</select>
-<label>Other:</label>
-<input type="text" value="Write your own gender">
-<h4>Contact details</h4>
-<label>Name *</label>
-<input type="text" value="How should we call you?">
-<label>E-mail *</label>
-<input type="text" value="Type whole E-Mail">
-<h4>Address</h4>
-<label>Phone *</label>
-<input type="text" value="Type whole phone number [Russian Format]">
-<div class="flex-row">
-<input name="delivery" type="radio" value="delivery">
-<label>Delivery</label>
-</div>
-<div class="flex-row">
-<input name="delivery" type="radio" value="take_away">
-<label>Pickup</label>
-</div>
-<label>Comments</label>
-<textarea name="comments"></textarea>
-<button name="send" type="button">Send</button>
-</form>
-</section>
-<section>
-<h2>Right Form</h2>
+<h2>Forms</h2>
 <h2>Contact Us</h2>
 <h4>We are waiting for your applications</h4>
 <form enctype="multipart/form-data" method="post" name="contact_form" onsubmit="return validateForm()">
@@ -287,39 +304,39 @@ ul. Lva Tolstogo, 16
 </div>
 </aside>
 </section>
+<section>
+<aside class="code">
+<h4>Code</h4>
+<pre class="prettyprint"><code class="language-html">&lt;form&gt;
+&lt;fieldset class=&quot;form-group&quot;&gt;
+&lt;legend&gt;Address&lt;/legend&gt;
+&lt;label for=&quot;phone&quot;&gt;
+Phone
+&lt;abbr aria-label=&quot;required&quot; title=&quot;required&quot;&gt;*&lt;/abbr&gt;
+&lt;/label&gt;
+&lt;input id=&quot;phone&quot; maxlength=&quot;20&quot; minlength=&quot;10&quot; name=&quot;phone&quot; pattern=&quot;((\d{1,2}|\+\d{1,2})[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}&quot; placeholder=&quot;+7 926 123 45 67&quot; required=&quot;&quot; title=&quot;Type whole phone number [Russian Format]&quot; type=&quot;tel&quot;&gt;
+&lt;/form&gt;</code></pre>
+</aside>
+<aside class="notice">
+<h4>Links</h4>
+<ul>
+<li>
+<a href="https://www.w3.org/WAI/tutorials/forms/" title="W3C - Forms">WCAG Forms</a>
+</li>
+<li>
+<a href="https://webaim.org/techniques/forms/#keyboard" title="WebAIM - Creating Accessible Forms">WebAIM: Keyboard Accessible</a>
+</li>
+<li>
+<a href="https://webaim.org/techniques/forms/advanced" title="WebAIM - Creating Accessible Forms">WebAIM: Labels</a>
+</li>
+</ul>
+</aside>
+</section>
 </div>
 <div class="row">
 <section>
-<h2>Wrong Article</h2>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod auctor tincidunt. Aenean eu porta neque, sit amet condimentum leo. Donec justo eros, viverra ut uctor feugiat, mollis vitae leo. Vestibulum eleifend est urna, at imperdiet ex aliquam
-volutpat.
-<img alt="" class="wrong" src="">
-<a class="wrong" href="/files/doc.pdf" title="Quisque dolor nisl [PDF]">Quisque dolor nisl</a>
-,
-<a class="wrong" href="/files/doc.txt" title="Phasellus interdum ultricies lectus [TXT]">Phasellus interdum ultricies lectus</a>
-.
-<p>
-Nam euismod ipsum et metus
-condimentum iaculis ac nec ante.
-<img alt="" class="wrong" src="">
-<a class="wrong" href="#" target="_blank">Nullam ipsum turpis.</a>
-Morbi ex metus, condimentum porta gravida eu, luctus nec velit.
-<a class="wrong" href="/files/doc.pdf" rel="noopener" target="_blank" title="Nunc enim leo [PDF] (in a new window)">Nulla facilisi.</a>
-Duis cursus, nisi ac pharetra luctus, lacus augue blandit diam, at vulputate nisl ante vitae est. Proin purus urna, auctor rutrum nisl eu, venenatis vulputate libero.
-<a class="wrong" href="/files/doc.txt" rel="noopener" target="_blank" title="Curabitur ex risus [TXT] (in a new window)">Mauris eu volutpat quam, at mattis tortor.</a>
-Vivamus rhoncus, justo ac ultrices tempor, leo nulla sollicitudin risus, et scelerisque nunc nulla eget nunc. Pellentesque ultrices in dolor a sodales.
-<img alt="" class="wrong" src="">
-Integer felis risus, blandit ut vulputate id, consectetur mollis felis. Nam molestie diam ut mauris ultrices semper. Phasellus venenatis est urna. Nulla interdum felis non quam sagittis, vel eleifend risus consectetur. Vivamus mollis urna in nisl faucibus mollis. Suspendisse nibh magna, blandit quis leo eget, fermentum egestas justo. Vivamus tincidunt nulla eu aliquam viverra. Cras at suscipit sem. Duis eleifend tortor a purus luctus congue sit amet eu orci.
-</p>
-<p>
-Integer molestie sem dui, a varius ipsum tempus id. Praesent nec congue velit. Sed consectetur tellus risus, at vestibulum nisi mattis vel. Nulla facilisi. Pellentesque egestas egestas lorem, vitae semper nisi pretium nec. Suspendisse potenti. Pellentesque congue mauris magna, quis tempor quam consectetur quis. Nunc auctor risus et tristique vestibulum. Mauris rhoncus pulvinar enim eget pretium. Donec ornare odio nec magna volutpat sodales. Integer ut cursus augue, nec efficitur leo. Ut malesuada nisi odio, nec semper ipsum egestas vel. Mauris viverra consequat tellus, auctor maximus erat dignissim sed. Pellentesque fermentum massa ac nulla ullamcorper dapibus. Donec rhoncus varius accumsan. Morbi pretium risus ligula, ac sodales diam mattis sit amet.
-</p>
-</p>
-</section>
-<section>
-<h2>Right Article</h2>
-<h4>Article</h4>
+<h2>Articles</h2>
+<h4>Title</h4>
 <article>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod auctor tincidunt. Aenean eu porta neque, sit amet condimentum leo. Donec justo eros, viverra ut uctor feugiat, mollis vitae leo. Vestibulum eleifend est urna, at imperdiet ex aliquam
@@ -347,6 +364,28 @@ Integer felis risus, blandit ut vulputate id, consectetur mollis felis. Nam mole
 Integer molestie sem dui, a varius ipsum tempus id. Praesent nec congue velit. Sed consectetur tellus risus, at vestibulum nisi mattis vel. Nulla facilisi. Pellentesque egestas egestas lorem, vitae semper nisi pretium nec. Suspendisse potenti. Pellentesque congue mauris magna, quis tempor quam consectetur quis. Nunc auctor risus et tristique vestibulum. Mauris rhoncus pulvinar enim eget pretium. Donec ornare odio nec magna volutpat sodales. Integer ut cursus augue, nec efficitur leo. Ut malesuada nisi odio, nec semper ipsum egestas vel. Mauris viverra consequat tellus, auctor maximus erat dignissim sed. Pellentesque fermentum massa ac nulla ullamcorper dapibus. Donec rhoncus varius accumsan. Morbi pretium risus ligula, ac sodales diam mattis sit amet.
 </p>
 </article>
+</section>
+<section>
+<aside class="code">
+<h4>Code</h4>
+<pre class="prettyprint"><code class="language-html">&lt;article&gt;
+&lt;p&gt;
+Lorem ipsum.
+&lt;img alt=&quot;&quot; src=&quot;&quot;&gt;
+&lt;a href=&quot;/files/doc.pdf&quot; title=&quot;Quisque dolor nisl [PDF]&quot;&gt;Quisque dolor nisl&lt;/a&gt;
+,
+&lt;a href=&quot;/files/doc.txt&quot; title=&quot;Phasellus interdum ultricies lectus [TXT]&quot;&gt; Donec rhoncus varius accumsan. Morbi pretium risus ligula, ac sodales diam mattis sit amet.
+&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+</aside>
+<aside class="notice">
+<h4>Links</h4>
+<ul>
+<li>
+<a href="https://www.w3.org/WAI/tutorials/page-structure/content/" title="W3C">Content Structure</a>
+</li>
+</ul>
+</aside>
 </section>
 </div>
 </main>
@@ -391,5 +430,6 @@ Data found via
 </aside>
 </footer>
 <script src="js/script-min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 </body>
 </html>
