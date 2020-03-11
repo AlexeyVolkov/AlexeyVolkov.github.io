@@ -65,6 +65,7 @@
 		content: "\25BC";
 		color: @black;
 		padding: 0.6rem;
+		border: thin solid #e9e9e9;
 	}
 }
 .heading {
@@ -170,7 +171,6 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
 	align-items: stretch;
 	align-content: space-between;
 
@@ -186,6 +186,7 @@
 		&:hover {
 			.link__span_arrow:after {
 				content: "\25B2";
+				border-color: transparent;
 			}
 		}
 	}
