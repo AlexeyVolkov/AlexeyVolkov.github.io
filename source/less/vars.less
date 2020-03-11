@@ -2,25 +2,34 @@
   * Fonts
   */
 @font-face {
-  font-family: "Ubuntu Condensed";
-  src: url("/fonts/Ubuntu-C.ttf") format("ttf"),
-    url("/fonts/Ubuntu-C.woff2") format("woff2"),
-    url("/fonts/Ubuntu-C.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: fallback;
+	font-family: "Ubuntu";
+	font-display: fallback;
+	font-variant-ligatures: common-ligatures;
+	font-feature-settings: "onum", "tnum", "zero";
+	font-variant-numeric: tabular-nums slashed-zero oldstyle-nums;
+	src: local("Ubuntu Regular"),
+		url("/fonts/Ubuntu/Ubuntu-R.woff2") format("woff2"),
+		url("/fonts/Ubuntu/Ubuntu-R.woff") format("woff"),
+		url("/fonts/Ubuntu/Ubuntu-R.ttf") format("truetype"),
+		url("/fonts/Ubuntu/Ubuntu-R.eot") format("embedded-opentype");
 }
 @font-face {
-  font-family: "JetBrains Mono";
-  font-display: fallback;
-  src: local("JetBrains Mono"),
-    url("/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+	font-family: "JetBrains Mono";
+	font-display: fallback;
+	font-variant-ligatures: common-ligatures;
+	font-feature-settings: "onum", "tnum", "zero";
+	font-variant-numeric: tabular-nums slashed-zero oldstyle-nums;
+	src: local("JetBrains Mono"),
+		url("/fonts/JetBrains/JetBrainsMono-Regular.woff2") format("woff2"),
+		url("/fonts/JetBrains/JetBrainsMono-Regular.woff") format("woff"),
+		url("/fonts/JetBrains/JetBrainsMono-Regular.ttf") format("truetype"),
+		url("/fonts/JetBrains/JetBrainsMono-Regular.eot")
+			format("embedded-opentype");
 }
 @arial: Verdana, Arial, Helvetica, sans-serif;
-@times: Times, Times New Roman, Georgia, serif;
-@mono: "JetBrains Mono", Consolas, Lucida Console, Courier, monospace;
-@ubuntu: "Ubuntu Condensed", "Segoe UI", arial, "ｍｓ ｐゴシック", "ms pgothic",
-  "돋움", dotum, Roboto, Verdana, Arial, Helvetica, sans-serif;
+@times: "Times New Roman", Georgia, serif;
+@mono: "JetBrains Mono", Consolas, Courier, monospace;
+@ubuntu: "Ubuntu", Verdana, Arial, Helvetica, sans-serif;
 
 /**
   * Media Points
