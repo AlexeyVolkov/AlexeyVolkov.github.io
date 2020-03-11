@@ -174,12 +174,21 @@
 	align-items: stretch;
 	align-content: space-between;
 
+	padding-top: 1em;
+
 	.menu_drop {
 		opacity: 0;
 		height: 1px;
-		padding: 0.5em;
+		padding: 0.5em 0;
 		border: thin solid transparent;
 		overflow: hidden;
+	}
+	.menu__item {
+		padding: 0.5em;
+
+		.link {
+			padding: 1em;
+		}
 	}
 	.menu__item_drop-inside {
 		cursor: pointer;

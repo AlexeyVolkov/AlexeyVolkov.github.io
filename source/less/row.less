@@ -11,6 +11,13 @@
 		flex-direction: row;
 	}
 }
+
+.row_simple {
+	justify-content: flex-start;
+	align-items: normal;
+	flex-direction: row;
+}
+
 .row__block {
 	width: 100%;
 	padding: 1rem 0;
@@ -22,6 +29,14 @@
 		padding-right: 0.5rem;
 	}
 }
+.row__block_simple {
+	width: auto;
+	padding: 1rem;
+	@media (min-width: @ipad) {
+		width: auto;
+	}
+}
+
 .row_3 {
 	.row__block {
 		@media (min-width: @ipad) {
