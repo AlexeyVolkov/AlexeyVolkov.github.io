@@ -1,0 +1,708 @@
+doctype html
+html lang="en" 
+	head
+		meta charset="utf-8" /
+		meta content="IE=edge" http-equiv="X-UA-Compatible" /
+		meta content="width=device-width, initial-scale=1.0" name="viewport" /
+		title Website Accessibility Code Examples
+		link href="css/style.css" rel="stylesheet" /
+		meta content=("Best accessability practices and cutting-edge CSS HTML technologies") name="description" /
+		link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="120x120" /
+		link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /
+		link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" /
+		link href="/site.webmanifest" rel="manifest" /
+		link color="#5bbad5" href="/safari-pinned-tab.svg" rel="mask-icon" /
+		meta content="#ffc40d" name="msapplication-TileColor" /
+		meta content="#ffffff" name="theme-color" /
+	body
+		a.screen-reader-text.link href="#content"
+				| Skip to Content (Press Enter)
+		main
+			section.row#links
+				h2.row__block.heading.heading_2.row__heading Links
+				.row__block.row__block-left
+					| Hire me
+					a.link href="mailto:alexey.a.volkov@pm.me?subject=Hire%20Coder&amp;body=Our-Company-wants-to-hire-you" rel=("nofollow noopener") title=("Conctact me via email")
+						| via email
+					|!
+					br
+					nav role="navigation" aria-label="Main menu"
+						ul.menu
+							li.menu__item
+								a.link href="#links" Links
+							li.menu__item
+								a.link href="#forms" Forms
+							li.menu__item.menu__item_drop-inside
+								a.link href="#images" Images
+								span.link__span_arrow
+								ul.menu.menu_column.menu_drop
+									li.menu__item
+										a.link href="#figure" Figure
+									li.menu__item
+										a.link href="#svg" SVG
+							li.menu__item
+								a.link href="#articles" Articles
+							li.menu__item.menu__item_drop-inside
+								a.link href="https://github.com/AlexeyVolkov/AlexeyVolkov.github.io" rel="nofollow noopener" title="Open Source code" About
+								span.link__span_arrow
+								ul.menu.menu_column.menu_drop
+									li.menu__item
+										a.link href="https://axesslab.com/accessibility-according-to-pwd/" rel="nofollow noopener" title="Inspirational article" Accessibility according to actual people with disabilities
+									li.menu__item
+										a.link href="https://axesslab.com/practical-accessibility-improvements/" rel="nofollow noopener" title="Second inspirational article" Practical Examples of Accessibility Improvements
+							li.menu__item
+								a.link href="#tables" title="Jump to Tables section" Tables
+				.row__block.row__block-right
+					h4.code__heading Link Styling
+					pre.prettyprint
+								code.language-less.code
+									|
+										.link {
+											color: inherit;
+											text-decoration: underline;
+											text-decoration-color: #3344dd;
+											text-decoration-skip: edges;
+											text-decoration-skip-ink: auto;
+											text-decoration-line: underline;
+											text-decoration-style: solid;
+											text-decoration-thickness: 0.1em;
+											padding: 0 0.2rem;
+
+											&amp;:hover {
+												background-color: rgba(75%, 75%, 75%, 0.25);
+												text-decoration-thickness: 0.2em;
+												text-decoration-color: #bb1122;
+											}
+
+											&amp;:active {
+												text-decoration-thickness: 0.25em;
+												text-decoration-color: #bb1122;
+											}
+
+											&amp;:focus {
+												background-color: @black;
+												color: @white;
+												text-decoration-thickness: 0.25em;
+												text-decoration-color: #bb1122;
+												outline: none;
+											}
+										}
+					ul.links
+						li.links__item
+							a.link href="https://www.deque.com/blog/give-site-focus-tips-designing-usable-focus-indicators/" title=("Caitlin Geier is a UX designer at deque.com") rel="nofollow noopener" Designing Focus Indicators
+						li.links__item
+							a.link href="https://css-tricks.com/styling-underlines-web/" title=("css-tricks") rel="nofollow noopener" Styling Underlines on the Web
+					h4.code__heading E-Mail link
+					pre.prettyprint
+							code.language-html.code
+								|
+									&lt;a href=&quot;mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&amp;amp;bcc=lastperson@theirsite.com&amp;amp;subject=Big%20News&amp;amp;body=Body-goes-here&quot; rel=&quot;nofollow noopener&quot; title=&quot;Download Report&quot;&gt;Email me!&lt;/a&gt;
+					ul.links
+						li.links__item
+							a.link href="https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/" rel="nofollow noopener" title=("jitbit.com - Target=\"_blank\" - the most underestimated vulnerability ever") 
+								| Use target="_blank" ... never
+						li.links__item
+							a.link href="https://webaim.org/techniques/hypertext/hypertext_links" title=("WebAIM - Links and Hypertext") rel="nofollow noopener" WebAIM: Links
+						li.links__item
+							a.link href="https://webaim.org/blog/wcag-2-0-and-link-colors/" title=("WebAIM - WCAG 2.0 and Link Colors") rel="nofollow noopener"	WCAG 2.0 Link Colors
+						li.links__item
+							a.link href="https://www.w3.org/TR/WCAG20-TECHS/G201.html" rel="nofollow noopener" title="W3C" 
+								| Warn users about target="_blank"
+						li.links__item
+							a.link href="https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector" title="MDN" rel="nofollow noopener"
+								| Privacy and the :visited selector
+					h4.code__heading Accessible Drop-Down Menu
+					pre.prettyprint
+								code.language-html.code
+									|
+										&lt;ul class=&quot;menu&quot;&gt;
+											&lt;li class=&quot;menu__item menu__item_drop-inside&quot;&gt;
+												&lt;a class=&quot;link&quot; href=&quot;#images&quot;&gt;Images&lt;/a&gt;
+												&lt;ul class=&quot;menu menu_column menu_drop&quot;&gt;
+													&lt;li class=&quot;menu__item&quot;&gt;
+														&lt;a class=&quot;link&quot; href=&quot;#figure&quot;&gt;Figure&lt;/a&gt;
+													&lt;/li&gt;
+												&lt;/ul&gt;
+											&lt;/li&gt;
+											&lt;li class=&quot;menu__item&quot;&gt;
+												&lt;a class=&quot;link&quot; href=&quot;#links&quot;&gt;Links&lt;/a&gt;
+											&lt;/li&gt;
+										&lt;/ul&gt;
+					pre.prettyprint
+								code.language-less.code
+									|
+										.menu_drop {
+											opacity: 0;
+											height: 1px;
+										}
+
+										.menu__item_drop-inside .link:focus + .menu_drop,
+										.menu__item_drop-inside:hover .menu_drop,
+										.menu_drop:focus-within {
+											opacity: 1;
+											height: auto;
+										}
+										/**
+										 * Note, this technique would be
+										 * considerd a failure of
+										 * WCAG 2.1: 1.4.13
+										 * and
+										 * https://caniuse.com/#feat=css-focus-within
+										 */
+					ul.links
+						li.links__item
+							a.link href="https://www.scottohara.me/blog/2017/05/14/focus-within.html" title=("Scott O'Hara") Accessible Drop-Down Menu
+			section.row#images
+				h2.row__block.heading.heading_2.row__heading Images
+				.row__block.row__block-left
+					figure.figure#figure title="Legs in white sneakers on the table"
+						img.img.figure__img alt=("Legs in white sneakers on the table") src="images/white_sneakers.jpg" /
+						figcaption#figure-1.figure__figcaption.screen-reader-text Check out my new sneakers.
+					figure#svg title="Monochrome symbol of Kiwi"
+						img.img.figure__img alt=("Monochrome symbol of Kiwi") onerror=("this.onerror=null; this.src='/images/image.gif'") src="https://s.cdpn.io/3/kiwi.svg" /
+						figcaption.figure__figcaption.screen-reader-text This is SVG Kiwi!
+				.row__block.row__block-right
+						pre.prettyprint
+							code.language-html.code
+									|
+										&lt;figure aria-label=&quot;Check out my new sneakers&quot; role=&quot;figure&quot;&gt;
+											&lt;img alt=&quot;Legs in white sneakers on the table&quot; src=&quot;images/white_sneakers.jpg&quot;&gt;
+											&lt;figcaption id=&quot;figure-1&quot;&gt;Check out my new sneakers.&lt;/figcaption&gt;
+										&lt;/figure&gt;
+						h4.code__heading SVG
+						pre.prettyprint
+							code.language-html.code
+								|
+										&lt;img alt=&quot;Monochrome symbol of Kiwi&quot; class=&quot;img&quot; onerror=&quot;this.onerror=null; this.src='/images/image.gif'&quot; src=&quot;https://s.cdpn.io/3/kiwi.svg&quot;&gt;
+						ul.links
+							li.links__item
+								a.link href="https://www.w3.org/TR/2014/WD-html-alt-techniques-20141023/#images-of-pictures-1" title="W3C"	Techniques for providing useful text alternatives
+							li.links__item
+								a.link href="https://webaim.org/techniques/alttext/" title="webaim"	Alt text in any cases
+							li.links__item
+								a.link href="https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html" title="Scott O'Hara"	How do you figure?
+							li.links__item
+								a.link href="https://css-tricks.com/using-svg/" title="css-tricks.com"	Using SVG
+			section.row#forms
+				h2.row__block.heading.heading_2.row__heading Forms
+				.row__block.row__block-left
+					h2 Passenger Info
+					h4 You're about to buy ticket from Tbilisi to Moscow
+					form.form id="form" enctype="multipart/form-data" method="post" name="contact_form" onsubmit=("return validateForm()") 
+						fieldset.form__fieldset
+							legend.form__legend
+								| Gender
+							dl.form-group
+								dt.form__dt
+									label.form__label for="gender"	Gender:
+								dd.form__dd
+									select#gender.form__select name="gender" title=("Gender as in the ID") 
+										optgroup label="Binary" 
+											option value="man"	Man/Male/Masculine
+											option value="woman"	Woman/Female/Feminine
+										optgroup label="Non-Binary" 
+											option value="Agender"	Agender
+											option value="Bi-Gendered"	Bi-Gendered
+											option value="Butch"	Butch
+											option value="Female-to-Male"	Female-to-Male
+											option value="Femme"	Femme
+											option value="gender-diverse"	Gender Diverse
+											option value="Gender-Fluid"	Gender Fluid
+											option value="Gender-queer"	Gender queer
+											option value="Male-To-Female"	Male-To-Female
+											option value="Person-of-Transgender-Experience"	Person of Transgender
+											option value="Pangender"	Pangender
+											option value="other"	My gender is not in the list
+									small.form__text_muted.form__text_small Gender as in the ID
+							dl.form-group.block_hidden
+								dt.form__dt
+									label.form__label for="other_gender"	Other:
+								dd.form__dd
+									input#other_gender.form__input maxlength="25" minlength="1" name="other_gender" placeholder=("write if not listed") title=("Write your own gender") type="text" /
+						fieldset.form__fieldset
+							legend.form__legend Contact details
+							dl.form-group
+								dt.form__dt
+									label.form__label for="name" 
+										| Name:
+										abbr.form__abbr aria-label="required" title="required" data-descr="Mandatory field. Put Your name as in the ID."	*
+								dd.form__dd
+									input#name.form__input list="name_suggestion" maxlength="25" minlength="1" name="name" placeholder="Alex" required="" title=("How should we call you?") type="text"
+									small.form__text_muted.form__text_small Your name as in the ID
+									datalist#name_suggestion
+										option Alex
+										option Ben
+										option Bob
+										option John
+										option Jack
+										option Lil
+										option Tom
+										option Yan
+							dl.form-group
+								dt.form__dt
+									label for="email" 
+										| E-mail:
+										abbr.form__abbr	aria-label="required" title="required" data-descr="Mandatory field. Example: name@example.com."	*
+								dd.form__dd
+									input#email.form__input maxlength="255" minlength="5" name="email" placeholder="name@example.com" required="" title=("We'll send you an electonic copy of the ticket") type="email"
+									small.form__text_muted.form__text_small We'll send you an electonic copy of the ticket. Example: name@example.com.
+						fieldset.form__fieldset
+							legend.form__legend Address
+							dl.form-group
+								dt.form__dt
+									label.form__label for="phone" 
+										| Phone:
+								dd.form__dd
+									input#phone.form__input maxlength="20" name="phone"	placeholder=("+7 926 123 45 67") title=("Type whole phone number [Russian Format]") type="tel"
+									small.form__text_muted.form__text_small We'll send you SMS alerts in the event of emergencies on railway transport. Example: +7 987 123 43 43.
+							dl.form-group
+								dt.form__dt
+									label.form__label Ticket Delivery type:
+								dd.form__dd
+									.flex-row
+										input#delivery.form__input name="delivery" title=("We'll drive to you") type="radio" value="delivery" /
+										label.form__label for="delivery"	Russian Post
+										small.form__text_muted.form__text_small We'll drive to you.
+									.flex-row
+										input#take_away.form__input name="delivery" title=("You'll drive to us") type="radio" value="take_away" /
+										label.form__label for="take_away"	Pickup
+										small.form__text_muted.form__text_small You'll drive to us.
+							dl.form-group
+								dt.form__dt
+									label.form__label for="comments"	Comments:
+								dd.form__dd
+									textarea#comments.form__textarea name="comments" placeholder=("Intercom pin is 543#") title=("Any additional information")
+									small.form__text_muted.form__text_small Any additional information.
+							dl.form-group
+								dt.form__dt
+								dd.form__dd
+									button.form__button name="send" type="submit" disabled=""	Send
+									small.form__text_small.text_italic
+										abbr.form__abbr	aria-label="required" title="required" *
+										| - required. Please fill in these fields in order to contact you.
+					aside.border-top
+						h3 Contact us
+						p.center Other ways to reach us:
+						section.row.row_3.contacts
+							.row__block
+								p
+									| John Doe:
+									br/
+									a.link href="https://vk.com/id0" rel="noopener" title=("Open John's VK Page")	VK
+									a.link href="https://fb.com/" rel="noopener" title=("Open John's FB Page")	FB
+							.row__block
+								p
+									| Tel:
+									a.link href="tel:+79566545648" rel="noopener" title=("Make a call") 
+										| +7
+										| (956)
+										| 654
+										| 56-48
+									br/
+									| E-mail:
+									a.link href="mailto:index@yandex.ru" rel=("nofollow noopener") title=("Send a message")	index@yandex.ru
+							.row__block
+								p
+									| 119021,
+									br/
+									| Moscow,
+									br/
+									| ul. Lva Tolstogo, 16
+									br/
+									a.link href="https://osm.org/go/0t2amCnMn--" rel=("nofollow noopener")	[via map]
+				.row__block.row__block-right
+						pre.prettyprint
+							code.language-html.code
+									|
+										&lt;fieldset class="form__fieldset"&gt;
+											&lt;legend class="form__legend"&gt;Contact details&lt;/legend&gt;
+											&lt;dl class="form-group"&gt;
+												&lt;dt class="form__dt"&gt;
+													&lt;label class="form__label" for="name"&gt;
+														Name:
+														&lt;abbr aria-label="required" class="form__abbr" data-descr="Mandatory field. Put Your name as in the ID." title="required"&gt; *&lt;/abbr&gt;
+													&lt;/label&gt;
+												&lt;/dt&gt;
+												&lt;dd class="form__dd"&gt;
+													&lt;input class="form__input" id="name" list="name_suggestion" maxlength="25" minlength="1" name="name" placeholder="Alex" required="" title="How should we call you?" type="text"&gt;
+													&lt;small class="form__text_muted form__text_small"&gt;
+														Your name as in the ID
+													&lt;/small&gt;
+												&lt;/dd&gt;
+											&lt;/dl&gt;
+										&lt;/fieldset&gt;
+						h4.code__heading &lt;abbr&gt; styling
+						pre.prettyprint
+							code.language-less.code
+								|
+									.form__abbr[aria-label="required"] {
+										cursor: help;
+										&amp;[data-descr] {
+											position: relative;
+											&amp;:hover::after,
+											&amp;:focus::after {
+												content: attr(data-descr);
+												position: absolute;
+												z-index: 1;
+											}
+										}
+									}
+						h4.code__heading
+							| :focus state
+						pre.prettyprint
+							code.language-less.code
+								|
+									.form__input[type="radio"] {
+										cursor: pointer;
+										&amp;:focus {
+											box-shadow: 0 0 0 0.1rem @black;
+											outline: none;
+										}
+										&amp;:focus ~ .form__text_muted {
+											opacity: 1;
+										}
+									}
+									.form__input {
+										&amp;:focus {
+											background-color: #eee;
+											&amp; ~ .form__text_muted {
+												opacity: 1;
+											}
+										}
+										&amp;:focus {
+											outline: medium solid @black;
+										}
+									}
+									.form__input[type="submit"] {
+										cursor: pointer;
+										&amp;:focus {
+											border-style: inset;
+										}
+									}
+						ul.links
+							li.links__item
+								a.link href="https://www.w3.org/WAI/tutorials/forms/" title=("W3C - Forms")	WCAG Forms
+							li.links__item
+								a.link href="https://webaim.org/techniques/forms/#keyboard" title=("WebAIM - Creating Accessible Forms")	WebAIM: Keyboard Accessible
+							li.links__item
+								a.link href="https://webaim.org/techniques/forms/advanced" title=("WebAIM - Creating Accessible Forms")	WebAIM: Labels
+							li.links__item
+								a.link href="https://www.artlebedev.ru/technogrette/etc/forms/" lang="ru" title=("Студия Артемия Лебедева") 10 правил хороших форм
+							li.links__item
+								a.link href="https://github.com/AlexeyVolkov/rememberForm" title=("AlexeyVolkov - github.com") rememberForm
+			section.row#articles
+				h2.row__block.heading.heading_2.row__heading Articles
+				.row__block.row__block-left
+					h4 Глава 2. Понтий Пилат
+					article.text lang='ru'
+						p
+							|
+								В белом плаще с кровавым подбоем, шаркающей кавалерийской походкой, ранним утром четырнадцатого числа весеннего месяца нисана в крытую колоннаду между двумя крыльями дворца ирода великого вышел
+							nobr	прокуратор Иудеи Понтий Пилат.
+						p
+							|
+								Более всего на свете прокуратор ненавидел запах розового масла, и все теперь предвещало нехороший день, так как запах этот начал преследовать прокуратора с рассвета. Прокуратору казалось, что розовый запах источают кипарисы и пальмы в саду, что к запаху кожи и конвоя примешивается проклятая розовая струя. От флигелей в тылу дворца, где расположилась пришедшая с прокуратором в Ершалаим первая когорта двенадцатого молниеносного легиона, заносило дымком в колоннаду через верхнюю площадку сада, и к горьковатому дыму, свидетельствовавшему о том, что кашевары в кентуриях начали готовить обед, примешивался все тот же жирный розовый дух. О боги, боги, за что вы наказываете меня?
+						blockquote
+							|
+								Да, нет сомнений! Это она, опять она, непобедимая, ужасная болезнь гемикрания, при которой болит полголовы. От нее нет средств, нет никакого спасения. Попробую не двигать головой.
+						p
+							|
+								На мозаичном полу у фонтана уже было приготовлено кресло, и прокуратор, не глядя ни на кого, сел в него и протянул руку в сторону.
+						p
+							|
+								Секретарь почтительно вложил в эту руку кусок пергамента. Не удержавшись от болезненной гримасы, прокуратор искоса, бегло проглядел написанное, вернул пергамент секретарю и с трудом проговорил:
+						p
+							|
+								— Подследственный из Галилеи? К тетрарху дело посылали?
+						p
+							|
+								— Да, прокуратор, — ответил секретарь.
+						p
+							|
+								— Что же он?
+						p
+							|
+								— Он отказался дать заключение по делу и смертный приговор Синедриона направил на ваше утверждение, — объяснил секретарь.
+						p
+							|
+								Прокуратор дернул щекой и сказал тихо:
+						p
+							|
+								— Приведите обвиняемого.
+						p
+							|
+								И сейчас же с площадки сада под колонны на балкон двое легионеров ввели и поставили перед креслом прокуратора человека лет двадцати семи.
+							| &nbsp;
+							a.link href="https://ru.wikipedia.org/wiki/%D0%98%D0%B5%D1%88%D1%83%D0%B0_%D0%93%D0%B0-%D0%9D%D0%BE%D1%86%D1%80%D0%B8" rel="noopener" target="_blank" title="Иешуа Га-Ноцри (ссылка откроется в новом окне)" Этот человек
+							| &nbsp;
+							|
+								был одет в старенький и разорванный голубой хитон. Голова его была прикрыта белой повязкой с ремешком вокруг лба, а руки связаны за спиной. Под левым глазом у человека был большой синяк, в углу рта – ссадина с запекшейся кровью. Приведенный с тревожным любопытством глядел на прокуратора.
+				.row__block.row__block-right
+					h4.code__heading blockquote
+					pre.prettyprint
+						code.language-html.code
+								|
+									&lt;blockquote&gt;
+										Да, нет сомнений!
+									&lt;/blockquote&gt;
+					pre.prettyprint
+						code.language-less.code
+								|
+									q,
+									blockquote {
+										quotes: &quot;\00AB&quot;&quot;\00BB&quot;&quot;\201E&quot;&quot;\201C&quot;; /* « » „ “ */
+										font-style: italic;
+										text-indent: -0.2em; /* fallback */
+
+										&amp;:before {
+											content: open-quote;
+										}
+										&amp;:after {
+											content: close-quote;
+										}
+									}
+					h4.code__heading New Window Links
+					pre.prettyprint
+						code.language-html.code
+								|
+									&lt;a class=&quot;link&quot; target=&quot;_blank&quot;&gt;
+										Этот человек
+									&lt;/a&gt;
+					pre.prettyprint
+						code.language-css.code
+								|
+									a[target=&quot;_blank&quot;]::after {
+										content: &quot;⬀&quot;;
+									}
+					ul.links
+						li.links__item
+							a.link href="https://www.w3.org/WAI/tutorials/page-structure/content/" title="W3C" 
+								| Content Structure
+						li.links__item
+							a.link href="https://webdesign.tutsplus.com/articles/start-using-quotation-marks-the-correct-way--webdesign-16905" title="tutsplus" 
+								| Start Using Quotation Marks the “Correct” Way
+						li.links__item
+							a.link href="https://www.artlebedev.ru/kovodstvo/sections/104/" title="Артемий Лебедев" lang="ru"
+								| § 104. Кавычки
+						li.links__item
+							a.link href="https://www.artlebedev.ru/kovodstvo/sections/62/" title="Артемий Лебедев" lang="ru"
+								| § 62. Экранная типографика
+						li.links__item
+							a.link href="https://en.wikipedia.org/wiki/Quotation_mark#Unicode_code_point_table" title="wikipedia" 
+								| Unicode code point table
+						li.links__item
+							a.link href="https://www.artlebedev.ru/kovodstvo/sections/120/" title="Артемий Лебедев" lang="ru"
+								| § 120. Висячая пунктуация
+						li.links__item
+							a.link href="https://css-tricks.com/almanac/properties/h/hanging-punctuation/" title="CSS-Tricks" 
+								| hanging-punctuation
+						li.links__item
+							a.link href="https://practice.typekit.com/lesson/" title="typekit.com" rel="nofollow noopener"
+								| Typekit Practice Lessons
+			section.row#tables
+				h2.row__block.heading.heading_2.row__heading Tables
+				.row__block.row__block-left
+					figure.figure_table
+						table.table
+							caption.table__caption Supermarket`s Files by City
+							colgroup.table__colgroup
+								col.table__col.table__col-60
+								col.table__col.table__col-10
+								col.table__col.table__col-30
+							thead.table__thead
+								tr.table__tr
+									th.table__th Name
+									th.table__th Type
+									th.table__th.table__th_decorative Actions
+							tfoot.table__tfoot
+								tr.table__tr
+									th.table__th Name
+									th.table__th Type
+									th.table__th Actions
+							tbody.table__tbody
+								tr.table__tr
+									td.table__td
+										a.link.link_folder href="#folder2" data-folder__id="2" data-parent_folder_id="1"
+											|📁Moscow
+									td.table__td Folder
+									td.table__td
+										a.link.link_rename href="#rename__file-2" data-file__id="2" data-file__name="Moscow" title="Rename Moscow" 🔄
+										a.link.link_remove href="#remove_file__id=2" data-file_id="2" data-real_name="Moscow" title="Remove Moscow" ❌
+								tr.table__tr
+									td.table__td
+										a.link.link_folder href="#folder2" data-folder__id="2" data-parent_folder_id="1"
+											|📁Tiflis
+									td.table__td Folder
+									td.table__td
+										a.link.link_rename href="#rename__file-2" data-file__id="2" data-file__name="Tiflis" title="Rename Tiflis" 🔄
+										a.link.link_remove href="#remove_file__id=2" data-file_id="2" data-real_name="Tiflis" title="Remove Tiflis" ❌
+								tr.table__tr
+									td.table__td
+										a.link.link_folder href="#folder2" data-folder__id="2" data-parent_folder_id="1"
+											|📁Rostov
+									td.table__td Folder
+									td.table__td
+										a.link.link_rename href="#rename__file-2" data-file__id="2" data-file__name="Rostov" title="Rename Rostov" 🔄
+										a.link.link_remove href="#remove_file__id=2" data-file_id="2" data-real_name="Rostov" title="Remove Rostov" ❌
+								tr.table__tr
+									td.table__td
+										a.link.link_folder href="#folder2" data-folder__id="2" data-parent_folder_id="1"
+											|📁Kazan
+									td.table__td Folder
+									td.table__td
+										a.link.link_rename href="#rename__file-2" data-file__id="2" data-file__name="Kazan" title="Rename Kazan" 🔄
+										a.link.link_remove href="#remove_file__id=2" data-file_id="2" data-real_name="Kazan" title="Remove Kazan" ❌
+								tr.table__tr
+									td.table__td
+										a.link.link_folder href="#folder2" data-folder__id="2" data-parent_folder_id="1"
+											|📁Ulyanovsk
+									td.table__td Folder
+									td.table__td
+										a.link.link_rename href="#rename__file-2" data-file__id="2" data-file__name="Ulyanovsk" title="Rename Ulyanovsk" 🔄
+										a.link.link_remove href="#remove_file__id=2" data-file_id="2" data-real_name="Ulyanovsk" title="Remove Ulyanovsk" ❌
+					figure.figure_table
+						table.table.table-actor lang="ru"
+							caption.table__caption Антон Лапенко 
+							colgroup.table__colgroup
+								col.table__col.table__col-60
+								col.table__col.table__col-10
+								col.table__col.table__col-30
+							thead.table__thead
+								tr.table__tr
+									th.table__th.table__th_decorative Номер
+									th.table__th Название
+									th.table__th Рейтинг фильма
+							tfoot.table__tfoot
+								tr.table__tr
+									th.table__th.table__th_decorative Номер
+									th.table__th Название
+									th.table__th Рейтинг фильма
+							tbody.table__tbody
+								tr.table__tr
+									td.table__td colspan="3" Актёр
+								tr.table__tr
+									td.table__td.table__td_decorative 1
+									td.table__td Жара (2019)
+									td.table__td
+										a.link.link_rename href="https://www.kinopoisk.ru/film/1272297/votes/" rel="nofollow noopener" 5.38
+								tr.table__tr
+									td.table__td.table__td_decorative 2
+									td.table__td Средство от смерти (сериал, 2012)
+									td.table__td
+										a.link.link_rename href="https://www.kinopoisk.ru/film/688073/votes/" rel="nofollow noopener" 5.00
+								tr.table__tr
+									td.table__td.table__td_decorative 3
+									td.table__td Угонщик (2015)
+									td.table__td
+										a.link.link_rename href="https://www.kinopoisk.ru/film/911088/votes/" rel="nofollow noopener" 6.42
+								tr.table__tr
+									td.table__td colspan="3" Сценарист
+								tr.table__tr
+									td.table__td.table__td_decorative 1
+									td.table__td Внутри Лапенко (сериал, 2019 – 2020)
+									td.table__td
+										a.link.link_rename href="https://www.kinopoisk.ru/film/1328337/votes/" 8.77
+								tr.table__tr
+									td.table__td.table__td_decorative 2
+									td.table__td Игорь Катамаранов (сериал, 2019)
+									td.table__td
+				.row__block.row__block-right
+					pre.prettyprint
+						code.language-html.code
+								|
+									&lt;figure class="figure_table"&gt;
+										&lt;table class="table table-actor" lang="ru"&gt;
+											&lt;caption class="table__caption"&gt;Антон Лапенко&lt;/caption&gt;
+											&lt;colgroup class="table__colgroup"&gt;
+												&lt;col class="table__col table__col-60"&gt;
+												&lt;col class="table__col table__col-10"&gt;
+												&lt;col class="table__col table__col-30"&gt;
+											&lt;/colgroup&gt;
+											&lt;thead class="table__thead"&gt;
+												&lt;tr class="table__tr"&gt;
+													&lt;th class="table__th table__th_decorative"&gt;Номер&lt;/th&gt;
+													&lt;th class="table__th"&gt;Название&lt;/th&gt;
+													&lt;th class="table__th"&gt;Рейтинг фильма&lt;/th&gt;
+												&lt;/tr&gt;
+											&lt;/thead&gt;
+											&lt;tfoot class="table__tfoot"&gt;
+												&lt;tr class="table__tr"&gt;
+													&lt;th class="table__th table__th_decorative"&gt;Номер&lt;/th&gt;
+													&lt;th class="table__th"&gt;Название&lt;/th&gt;
+													&lt;th class="table__th"&gt;Рейтинг фильма&lt;/th&gt;
+												&lt;/tr&gt;
+											&lt;/tfoot&gt;
+											&lt;tbody class="table__tbody"&gt;
+												&lt;tr class="table__tr"&gt;
+													&lt;td class="table__td" colspan="3"&gt;Актёр&lt;/td&gt;
+												&lt;/tr&gt;
+												&lt;tr class="table__tr"&gt;
+													&lt;td class="table__td table__td_decorative"&gt;1&lt;/td&gt;
+													&lt;td class="table__td"&gt;Жара (2019)&lt;/td&gt;
+													&lt;td class="table__td"&gt;
+														&lt;a class="link link_rename" href="#" rel="nofollow noopener"&gt;5.38&lt;/a&gt;
+													&lt;/td&gt;
+												&lt;/tr&gt;
+											&lt;/tbody&gt;
+										&lt;/table&gt;
+									&lt;/figure&gt;
+					pre.prettyprint
+						code.language-less.code
+								|
+									.table {
+										max-width: 100%;
+										white-space: nowrap;
+										border-collapse: collapse;
+									}
+									.table__td,
+									.table__th {
+										padding: 0.2rem 0.1rem;
+										@media (min-width: @ipad) {
+											padding: 0.8rem 0.4rem;
+										}
+									}
+									.table__th_decorative {
+										@media (min-width: @ipad) {
+											opacity: 0;
+											.table:hover &,
+											.table:focus &,
+											.table:focus-within & {
+												opacity: 1;
+											}
+										}
+									}
+									.table__td {
+										vertical-align: text-top;
+									}
+									.table__th {
+										vertical-align: bottom;
+									}
+									.table__col-80 {
+										max-width: 80%;
+									}
+					ul.links
+						li.links__item
+							a.link href="https://www.w3.org/WAI/tutorials/tables/" rel="nofollow noopener" title="Web Accessibility Tutorials"
+								| Tables Concepts
+						li.links__item
+							a.link href="https://adrianroselli.com/2017/11/hey-its-still-ok-to-use-tables.html" rel="nofollow noopener" title="Adrian Roselli | Consultant, Writer, Speaker"
+								| Hey, It’s Still OK to Use Tables
+						li.links__item
+							a.link href="https://adrianroselli.com/2017/11/a-responsive-accessible-table.html" rel="nofollow noopener" title="Adrian Roselli | Consultant, Writer, Speaker"
+								| A Responsive Accessible Table
+						li.links__item
+							a.link href="https://alistapart.com/article/web-typography-tables" rel="nofollow noopener" title="alistapart.com"
+								| Designing Tables to be Read, Not Looked At
+						li.links__item
+							a.link href="https://css-tricks.com/complete-guide-table-element/" rel="nofollow noopener" title="Chris Coyier @ css-tricks"
+								| A Complete Guide to the Table Element
+		script src="js/script-min.js"
+		script src="https://cdn.jsdelivr.net/gh/AlexeyVolkov/rememberForm@1.0/rememberForm.min.js"
+		script
+			|
+				ready(function(){
+					rememberForm('#form');
+				});
+		script src="js/highlight.pack.js"
+		script
+			| hljs.initHighlightingOnLoad();
