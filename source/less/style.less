@@ -6,7 +6,9 @@
 @import "form.less";
 @import "figure.less";
 @import "table.less";
-@import "zenburn.less"; // highlight.js
+@media only screen and (color) {
+	@import "zenburn.less"; // highlight.js
+}
 
 body {
 	font-family: @ubuntu;
@@ -14,6 +16,12 @@ body {
 	hyphens: auto;
 	overflow-wrap: break-word;
 	line-height: 1.4;
+
+	@media print {
+		font-weight: 900;
+		color: black;
+		line-height: 1.5;
+	}
 }
 .table__td,
 .table__th {

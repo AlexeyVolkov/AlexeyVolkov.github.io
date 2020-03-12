@@ -15,6 +15,7 @@ Fixed Table Layouts
 	border-spacing: 0;
 	border-collapse: collapse;
 	margin: 0 auto;
+	break-inside: avoid;
 }
 .table__caption {
 	caption-side: bottom;
@@ -58,6 +59,9 @@ Fixed Table Layouts
 			opacity: 1;
 		}
 	}
+	@media print and (min-width: @ipad) {
+		opacity: 1;
+	}
 }
 .table__td_decorative {
 	@media (min-width: @ipad) {
@@ -67,6 +71,9 @@ Fixed Table Layouts
 		.table__tr:focus-within & {
 			opacity: 1;
 		}
+	}
+	@media print and (min-width: @ipad) {
+		opacity: 1;
 	}
 }
 

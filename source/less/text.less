@@ -59,6 +59,12 @@
 		text-decoration-color: #bb1122;
 		outline: none;
 	}
+
+	@media print {
+		&[href^="http"]:after {
+			content: " [" attr(href) "] ";
+		}
+	}
 }
 .link__span_arrow {
 	&:after {

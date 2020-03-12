@@ -52,6 +52,8 @@ html lang="en"
 										a.link href="https://axesslab.com/practical-accessibility-improvements/" rel="nofollow noopener" title="Second inspirational article" Practical Examples of Accessibility Improvements
 							li.menu__item
 								a.link href="#tables" title="Jump to Tables section" Tables
+							li.menu__item
+								a.link href="#print" title="Jump to Print section" Print
 				.row__block.row__block-right
 					h4.code__heading Link Styling
 					pre.prettyprint
@@ -518,7 +520,7 @@ html lang="en"
 								tr.table__tr
 									th.table__th Name
 									th.table__th Type
-									th.table__th.table__th_decorative Actions
+									th.table__th Actions
 							tfoot.table__tfoot
 								tr.table__tr
 									th.table__th Name
@@ -701,6 +703,48 @@ html lang="en"
 						li.links__item
 							a.link href="https://css-tricks.com/complete-guide-table-element/" rel="nofollow noopener" title="Chris Coyier @ css-tricks"
 								| A Complete Guide to the Table Element
+			section.row#print
+				h2.row__block.heading.heading_2.row__heading Print
+				.row__block
+					pre.prettyprint
+						code.language-css.code
+								|
+									@media print {
+										body {
+											font-weight: 900;
+											color: black;
+										}
+										.link:after {
+											content: " [" attr(href) "] ";
+										}
+										.any-block{
+											background-color: white;
+											color: black;
+										}
+									}
+									.figure {
+										break-inside: avoid;
+									}
+									.figure__img {
+										@media print {
+											filter: gray;
+											-webkit-filter: grayscale(1);
+											filter: grayscale(1);
+										}
+									}
+					ul.links
+						li.links__item
+							a.link href="https://css-tricks.com/css-tricks-finally-gets-a-print-stylesheet/" rel="nofollow noopener" title="CSS-Tricks"
+								| CSS-Tricks Finally Gets A Print Stylesheet 
+						li.links__item
+							a.link href="https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/" rel="nofollow noopener" title="smashingmagazine"
+								| Printing almost real book
+						li.links__item
+							a.link href="https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/" rel="nofollow noopener" title="smashingmagazine"
+								| A Guide To The State Of Print Stylesheets In 2018
+						li.links__item
+							a.link href="https://css-tricks.com/snippets/css/monotone-image-css/" rel="nofollow noopener" title="css-tricks"
+								| Monotone an Image with CSS
 		script src="js/script-min.js"
 		script src="https://cdn.jsdelivr.net/gh/AlexeyVolkov/rememberForm@1.0/rememberForm.min.js"
 		script
