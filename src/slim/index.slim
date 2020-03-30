@@ -5,7 +5,7 @@ html lang="en"
 		meta content="IE=edge" http-equiv="X-UA-Compatible" /
 		meta content="width=device-width, initial-scale=1.0" name="viewport" /
 		title Website Accessibility Code Examples
-		link href="css/style.css" rel="stylesheet" /
+		link href="style.css" rel="stylesheet" /
 		meta content=("Best accessability practices and cutting-edge CSS HTML technologies") name="description" /
 		link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="120x120" /
 		link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" /
@@ -17,7 +17,9 @@ html lang="en"
 	body
 		a.screen-reader-text.link href="#content"
 				| Skip to Content (Press Enter)
-		main
+		header.row.row_header#header
+            h1.row__block.heading.heading_1.row__heading.text_lowercase.text_invert.row__heading_invert Tolerant dot Site
+        main
 			section.row#links
 				h2.row__block.heading.heading_2.row__heading Links
 				.row__block.row__block-left
@@ -55,7 +57,7 @@ html lang="en"
 							li.menu__item
 								a.link href="#print" title="Jump to Print section" Print
 				.row__block.row__block-right
-					h4.code__heading Link Styling
+					h4.code__heading.heading_4 Link Styling
 					pre.prettyprint
 								code.language-less.code
 									|
@@ -94,7 +96,7 @@ html lang="en"
 							a.link href="https://www.deque.com/blog/give-site-focus-tips-designing-usable-focus-indicators/" title=("Caitlin Geier is a UX designer at deque.com") rel="nofollow noopener" Designing Focus Indicators
 						li.links__item
 							a.link href="https://css-tricks.com/styling-underlines-web/" title=("css-tricks") rel="nofollow noopener" Styling Underlines on the Web
-					h4.code__heading E-Mail link
+					h4.code__heading.heading_4 E-Mail link
 					pre.prettyprint
 							code.language-html.code
 								|
@@ -116,7 +118,7 @@ html lang="en"
 						li.links__item
 							a.link href="https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html" title="Adrian Roselli | Consultant, Writer, Speaker" rel="nofollow noopener"
 								| Link Targets and 3.2.5
-					h4.code__heading Accessible Drop-Down Menu
+					h4.code__heading.heading_4 Accessible Drop-Down Menu
 					pre.prettyprint
 								code.language-html.code
 									|
@@ -176,7 +178,7 @@ html lang="en"
 											&lt;img alt=&quot;Legs in white sneakers on the table&quot; src=&quot;images/white_sneakers.jpg&quot;&gt;
 											&lt;figcaption id=&quot;figure-1&quot;&gt;Check out my new sneakers.&lt;/figcaption&gt;
 										&lt;/figure&gt;
-						h4.code__heading SVG
+						h4.code__heading.heading_4 SVG
 						pre.prettyprint
 							code.language-html.code
 								|
@@ -335,7 +337,7 @@ html lang="en"
 												&lt;/dd&gt;
 											&lt;/dl&gt;
 										&lt;/fieldset&gt;
-						h4.code__heading &lt;abbr&gt; styling
+						h4.code__heading.heading_4 &lt;abbr&gt; styling
 						pre.prettyprint
 							code.language-less.code
 								|
@@ -351,7 +353,7 @@ html lang="en"
 											}
 										}
 									}
-						h4.code__heading
+						h4.code__heading.heading_4
 							| :focus state
 						pre.prettyprint
 							code.language-less.code
@@ -442,7 +444,7 @@ html lang="en"
 							|
 								был одет в старенький и разорванный голубой хитон. Голова его была прикрыта белой повязкой с ремешком вокруг лба, а руки связаны за спиной. Под левым глазом у человека был большой синяк, в углу рта – ссадина с запекшейся кровью. Приведенный с тревожным любопытством глядел на прокуратора.
 				.row__block.row__block-right
-					h4.code__heading blockquote
+					h4.code__heading.heading_4 blockquote
 					pre.prettyprint
 						code.language-html.code
 								|
@@ -465,7 +467,7 @@ html lang="en"
 											content: close-quote;
 										}
 									}
-					h4.code__heading New Window Links
+					h4.code__heading.heading_4 New Window Links
 					pre.prettyprint
 						code.language-html.code
 								|
