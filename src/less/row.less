@@ -3,8 +3,6 @@
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch;
 	max-width: 100%;
 
 	@media (min-width: @ipad) {
@@ -16,6 +14,19 @@
 	justify-content: flex-start;
 	align-items: normal;
 	flex-direction: row;
+}
+
+.row_width-80 {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+
+	@media (min-width: @ipad) {
+		width: 80%;
+	}
+	@media print {
+		width: 70%;
+	}
 }
 
 .row__block {
