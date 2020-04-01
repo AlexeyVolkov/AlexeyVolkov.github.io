@@ -19,7 +19,7 @@ html lang="en"
 				| Skip to Content (Press Enter)
 		header.grid.grid_website-header
             a.link href="/" title="Main Page"
-                h1.heading.heading_1.text_lowercase.text_zilla.text_center Tolerant dot Site
+                h1.heading.heading_zilla.heading_zilla-sm.text_lowercase.text_center Tolerant dot Site
             nav.grid__cell_center
                 ul.menu
                     li.menu__item
@@ -35,51 +35,61 @@ html lang="en"
                     li.menu__item
                         a.link href="#print" title="Go to Accessible Print" Print
         main
-			section.grid.grid_section#links
-                header.grid.grid_header.heading_zilla
-				    h2.heading.heading_2.row_width-80 Links
-                main.grid.grid_main
-                    iframe.row_width-80.iframe_code width="100%" height="100%" src="//jsfiddle.net/meisloafer/v9rqf2ey/24/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="true" frameborder="0"
+			article#links.grid.grid_article
+                header.grid.grid_header.grid__header.grid__header_article
+                    .row.row_width-80
+				        h2.heading.heading_zilla.heading_zilla-xs Links
+                section.grid.grid_main
+                    .row.row_width-80
+                        a.link.link_iframe href="https://jsfiddle.net/meisloafer/v9rqf2ey/24/" rel="nofollow noopener" title="Open this code example at jsfiddle.net" Open in JSFiddle
+                        iframe.iframe.iframe_code src="https://jsfiddle.net/meisloafer/v9rqf2ey/24/embedded/html,css,result/" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer" title="Example of Accessible Links. Hosted at jsfiddle.net"
                 footer
-                    .row_width-80
-                        .grid.grid_footer
-                            .usage_notes
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                     .row.row_width-80
+                         .grid.grid_footer
+                            section.usage_notes
+                                .grid__sub-header.grid__sub-header_usage-notes
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Usage notes
                                 article.text.text_ubuntu
                                     ol.links
                                         li.links__item
-                                            p.block_inline.text_strong How to make CSS-pure accessible drop-down menu?                                    
+                                            p.block.block_inline
+                                                strong.strong How to make CSS-pure accessible drop-down menu?
                                             p I use focus-within pseudo-class as if Scott O'Hara does.
-
                                         li.links__item
-                                            p.block_inline.text_strong What're the cutting-edge techniques to underline links?
+                                            p.block.block_inline
+                                                strong.strong What're the cutting-edge techniques to underline links?
                                             p I prefer using text-decoration-* properties after reading Benjamin Woodruff and John D. Jameson posts. 
 
                                         li.links__item
-                                            p.block_inline.text_strong What's the most annoying thing in links for people using the keyboard?
+                                            p.block.block_inline
+                                                strong.strong What's the most annoying thing in links for people using the keyboard?
                                             p outline: none; rule. I always highlight link focus status!
 
                                         li.links__item
-                                            p.block_inline.text_strong Finally, should we put target="_blank" or not?
+                                            p.block.block_inline
+                                                strong.strong Finally, should we put target="_blank" or not?
                                             p I do it almost NEVER. Users must control your website behavior. I must mark such links. The vulnerability is underestimated.
                                         p You open the viral page from Facebook. The viral page changes previous tab with the viral URL. 
                                         p I use &lt;a rel="noopener noreferrer" target="_blank" …&gt;.
 
                                         li.links__item
-                                            p.block_inline.text_strong What else about CSS security?
-                                            p :visited selector was tricky. Now it's okay. So you're to decide.
-                            .see_also
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
+                                            p.block.block_inline
+                                                strong.strong What else about CSS security?
+                                            p
+                                                | :visited selector was tricky. Now it's okay. So you're to decide.
+                            section.see-also
+                                .grid__sub-header.grid__sub-header_see-also
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Links
                                 .row
                                     nav
-                                        h4.heading.heading_4.text_zilla Link Styling
+                                        h4.heading.heading_zilla-light.heading_zilla-xxxs Link Styling
                                         ol.links
                                             li.links__item
                                                 a.link href="https://www.deque.com/blog/give-site-focus-tips-designing-usable-focus-indicators/" title=("Caitlin Geier is a UX designer at deque.com") rel="nofollow noopener" Designing Focus Indicators
                                             li.links__item
                                                 a.link href="https://css-tricks.com/styling-underlines-web/" title=("css-tricks") rel="nofollow noopener" Styling Underlines on the Web
                                     nav
-                                        h4.heading.heading_4.text_zilla E-Mail link
+                                        h4.heading.heading_zilla-light.heading_zilla-xxxs E-Mail link
                                         ol.links
                                             li.links__item
                                                 a.link href="https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/" rel="nofollow noopener" title=("jitbit.com - Target=\"_blank\" - the most underestimated vulnerability ever") 
@@ -98,14 +108,15 @@ html lang="en"
                                                 a.link href="https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html" title="Adrian Roselli | Consultant, Writer, Speaker" rel="nofollow noopener"
                                                     | Link Targets and 3.2.5
                                     nav
-                                        h4.heading.heading_4.text_zilla Accessible Drop-Down Menu
+                                        h4.heading.heading_zilla-light.heading_zilla-xxxs Accessible Drop-Down Menu
                                         ol.links
                                             li.links__item
-                                                a.link href="https://www.scottohara.me/blog/2017/05/14/focus-within.html" title=("Scott O'Hara") Accessible Drop-Down Menu
+                                                a.link href="https://www.scottohara.me/blog/2017/05/14/focus-within.html" title=("Scott O'Hara") rel="nofollow noopener" Accessible Drop-Down Menu
                                             li.links__item
-                                                a.link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" title="MDN" The Details disclosure element
-                            .caniuseit
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-violet Can I use it?
+                                                a.link href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" title="MDN" rel="nofollow noopener" The Details disclosure element
+                            section.caniuseit
+                                .grid__sub-header.grid__sub-header_caniuseit
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Can I use it?
                                 nav
                                     ol.links
                                         li.links__item
@@ -115,20 +126,27 @@ html lang="en"
                                         li.links__item
                                             a.link href="https://caniuse.com/#feat=css-focus-within" rel="nofollow noopener"
                                                 | :focus-within CSS pseudo-class
-			section.grid.grid_section#images
-                header.grid.grid_header.heading_zilla
-				    h2.heading.heading_2.row_width-80 Images
-                main.grid.grid_main
-                    iframe.row_width-80.iframe_code width="100%" height="100%" src="//jsfiddle.net/meisloafer/v4z5k79o/5/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="true" frameborder="0"
+			article#images.grid.grid_article
+                header.grid.grid_header.grid__header.grid__header_article
+                    .row.row_width-80
+				        h2.heading.heading_zilla.heading_zilla-xs Images
+                section.grid.grid_main
+                    .row.row_width-80
+                        a.link.link_iframe href="https://jsfiddle.net/meisloafer/v4z5k79o/5/" rel="nofollow noopener" title="Open this code example at jsfiddle.net" Open in JSFiddle
+                        iframe.iframe.iframe_code src="https://jsfiddle.net/meisloafer/v4z5k79o/5/embedded/html,css,result/" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer" title="Example of Accessible Images. Hosted at jsfiddle.net"
+                        noscript
+                            | https://jsfiddle.net/meisloafer/v4z5k79o/5/
                 footer
-                    .row_width-80
+                    .row.row_width-80
                         .grid.grid_footer
-                            .usage_notes
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                            section.usage_notes
+                                .grid__sub-header.grid__sub-header_usage-notes
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Usage notes
                                 article.text.text_ubuntu
                                     ol.links
                                         li.links__item
-                                            p.block_inline.text_strong I know &lt;img&gt; what else?
+                                            p.block.block_inline
+                                                strong.strong I know &lt;img&gt; what else?
                                             p HTML5 introduced &lt;figure&gt; element. This is standard for images.
                                             p MDN Example:
                                             pre.prettyprint
@@ -140,7 +158,8 @@ html lang="en"
                                                             &lt;figcaption&gt;An elephant at sunset&lt;/figcaption&gt;
                                                         &lt;/figure&gt;
                                         li.links__item
-                                            p.block_inline.text_strong I'm confused with alternative text. W3C doesn't help. What and where should I write?
+                                            p.block.block_inline
+                                                strong.strong I'm confused with alternative text. W3C doesn't help. What and where should I write?
                                             p What — I've read WebAim article. They don't give abstract examples but teach you writing proper alt texts.
                                             p Where — Scott O'Hara`s article shows us the way.
                                             p Final example:
@@ -165,7 +184,8 @@ html lang="en"
                                                         the &lt;figcaption&gt;.
                                                         --&gt;
                                         li.links__item
-                                            p.block_inline.text_strong How to make my images print-friendly?
+                                            p.block.block_inline
+                                                strong.strong How to make my images print-friendly?
                                             p I use filter property. So images are black and white.
                                             p Example:
                                             pre.prettyprint
@@ -178,37 +198,45 @@ html lang="en"
                                                                 filter: grayscale(1);
                                                             }
                                                         }
-                            .see_also
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
+                            section.see_also
+                                .grid__sub-header.grid__sub-header_see-also
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Links
                                 .row
                                     nav
                                         ol.links
                                             li.links__item
-                                                a.link href="https://www.w3.org/TR/2014/WD-html-alt-techniques-20141023/#images-of-pictures-1" title="W3C"	Techniques for providing useful text alternatives
+                                                a.link href="https://www.w3.org/TR/2014/WD-html-alt-techniques-20141023/#images-of-pictures-1" title="W3C" rel="nofollow noopener"	Techniques for providing useful text alternatives
                                             li.links__item
-                                                a.link href="https://webaim.org/techniques/alttext/" title="webaim"	Alt text in any cases
+                                                a.link href="https://webaim.org/techniques/alttext/" title="webaim" rel="nofollow noopener"	Alt text in any cases
                                             li.links__item
-                                                a.link href="https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html" title="Scott O'Hara"	How do you figure?
+                                                a.link href="https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html" rel="nofollow noopener" title="Scott O'Hara"	How do you figure?
                                             li.links__item
-                                                a.link href="https://css-tricks.com/using-svg/" title="css-tricks.com"	Using SVG
-                            .caniuseit
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-violet Can I use it?
+                                                a.link href="https://css-tricks.com/using-svg/" title="css-tricks.com" rel="nofollow noopener"	Using SVG
+                            section.caniuseit
+                                .grid__sub-header.grid__sub-header_caniuseit
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Can I use it?
                                 nav
                                     ol.links
                                         li.links__item
                                             a.link href="https://caniuse.com/#feat=css-filters" rel="nofollow noopener" CSS Filter Effects
-            section.grid.grid_section#forms
-                header.grid.grid_header.heading_zilla
-				    h2.heading.heading_2.row_width-80 Forms
-                main.grid.grid_main
-                    iframe.row_width-80.iframe_code width="100%" height="100%" src="//jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="true" frameborder="0"
+            article#forms.grid.grid_article
+                header.grid.grid_header.grid__header.grid__header_article
+                    .row.row_width-80
+				        h2.heading.heading_zilla.heading_zilla-xs Forms
+                section.grid.grid_main
+                    .row.row_width-80
+                        a.link.link_iframe href="https://jsfiddle.net/meisloafer/p6efvwyL/5/" rel="nofollow noopener" title="Open this code example at jsfiddle.net" Open in JSFiddle
+                        iframe.iframe.iframe_code src="https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer" title="Example of Accessible Forms. Hosted at jsfiddle.net"
+                        noscript
+                            | https://jsfiddle.net/meisloafer/p6efvwyL/5/
                 footer
-                    .row_width-80
-                        .grid.grid_footer
-                            .usage_notes
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                     .row.row_width-80
+                         .grid.grid_footer
+                            section.usage_notes
+                                .grid__sub-header.grid__sub-header_usage-notes
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Usage notes
                                 article.text.text_ubuntu
-                                    h4.heading.heading_4 What makes forms inaccessible?
+                                    h4.heading.heading_zilla.heading_zilla-xxxs What makes forms inaccessible?
                                     ol.links
                                         li.links__item
                                             p CAPTHCA. It's 100% inaccessible for disabled people, 100% inaccessible for ad blocker and VPN users and 100% annoying for anyone else.
@@ -237,23 +265,25 @@ html lang="en"
                                             p Uncertainty. If I check it, do I enable or disable it?
                                             p Action form controls labels — always a verb — and it must correspond to the action that will occur when a button is pressed, box is checked, etc.
 
-                            .see_also
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
+                            section.see_also
+                                .grid__sub-header.grid__sub-header_see-also
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Links
                                 .row
                                     nav
                                         ol.links
                                             li.links__item
-                                                a.link href="https://www.w3.org/WAI/tutorials/forms/" title=("W3C - Forms")	WCAG Forms
+                                                a.link href="https://www.w3.org/WAI/tutorials/forms/" title=("W3C - Forms") rel="nofollow noopener"	WCAG Forms
                                             li.links__item
-                                                a.link href="https://webaim.org/techniques/forms/#keyboard" title=("WebAIM - Creating Accessible Forms")	WebAIM: Keyboard Accessible
+                                                a.link href="https://webaim.org/techniques/forms/#keyboard" title=("WebAIM - Creating Accessible Forms") rel="nofollow noopener"	WebAIM: Keyboard Accessible
                                             li.links__item
-                                                a.link href="https://webaim.org/techniques/forms/advanced" title=("WebAIM - Creating Accessible Forms")	WebAIM: Labels
+                                                a.link href="https://webaim.org/techniques/forms/advanced" title=("WebAIM - Creating Accessible Forms") rel="nofollow noopener"	WebAIM: Labels
                                             li.links__item
-                                                a.link href="https://www.artlebedev.ru/technogrette/etc/forms/" lang="ru" title=("Студия Артемия Лебедева") 10 правил хороших форм
+                                                a.link href="https://www.artlebedev.ru/technogrette/etc/forms/" lang="ru" title=("Студия Артемия Лебедева") rel="nofollow noopener" 10 правил хороших форм
                                             li.links__item
-                                                a.link href="https://github.com/AlexeyVolkov/rememberForm" title=("AlexeyVolkov - github.com") rememberForm
-                            .caniuseit
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-violet Can I use it?
+                                                a.link href="https://github.com/AlexeyVolkov/rememberForm" title=("AlexeyVolkov - github.com") rel="nofollow noopener" rememberForm
+                            section.caniuseit
+                                .grid__sub-header.grid__sub-header_caniuseit
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Can I use it?
                                 nav
                                     ol.links
                                         li.links__item
@@ -261,49 +291,58 @@ html lang="en"
                                         li.links__item
                                             a.link href="https://caniuse.com/#feat=css-focus-within" rel="nofollow noopener"
                                                 | :focus-within CSS pseudo-class
-			section.grid.grid_section#articles
-                header.grid.grid_header.heading_zilla
-				    h2.heading.heading_2.row_width-80 Articles
-                main.grid.grid_main
-                    iframe.row_width-80.iframe_code width="100%" height="100%" src="//jsfiddle.net/meisloafer/nhsr85fc/7/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="true" frameborder="0"
+			article#articles.grid.grid_article
+                header.grid.grid_header.grid__header.grid__header_article
+                    .row.row_width-80
+				        h2.heading.heading_zilla.heading_zilla-xs Articles
+                section.grid.grid_main
+                    .row.row_width-80
+                        a.link.link_iframe href="https://jsfiddle.net/meisloafer/nhsr85fc/7/" rel="nofollow noopener" title="Open this code example at jsfiddle.net" Open in JSFiddle
+                        iframe.iframe.iframe_code src="https://jsfiddle.net/meisloafer/nhsr85fc/7/embedded/html,css,result/" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer" title="Example of Accessible Articles. Hosted at jsfiddle.net"
+                        noscript
+                            | https://jsfiddle.net/meisloafer/nhsr85fc/7/
                 footer
-                    .row_width-80
-                        .grid.grid_footer
-                            .usage_notes
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                     .row.row_width-80
+                         .grid.grid_footer
+                            section.usage_notes
+                                .grid__sub-header.grid__sub-header_usage-notes
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Usage notes
                                 article.text.text_ubuntu
                                     ol.links
                                         li.links__item
-                                            p.block_inline.text_strong How to use quotation marks the correct way?
+                                            p.block.block_inline
+                                                strong.strong How to use quotation marks the correct way?
                                             p Use quotes property for q and blockquote elements after reading Ian Yates and Артемий Лебедев posts.
                                         li.links__item
-                                            p.block_inline.text_strong How to make text look as if I'm reading a book?
+                                            p.block.block_inline
+                                                strong.strong How to make text look as if I'm reading a book?
                                             p Read articles about висячая пунктуация by Артемий Лебедев — hanging punctuation by Chris Coyier. Learn all the settings of the fonts you use with Adobe Fonts. Don't forget about hyphens. And sometimes edit text manually.
-                            .see_also
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
+                            section.see-also
+                                .grid__sub-header.grid__sub-header_see-also
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Links
                                 .row
                                     nav
                                         ol.links
                                             li.links__item
-                                                a.link href="https://www.w3.org/WAI/tutorials/page-structure/content/" title="W3C" 
+                                                a.link href="https://www.w3.org/WAI/tutorials/page-structure/content/" title="W3C" rel="nofollow noopener" 
                                                     | Content Structure
                                             li.links__item
-                                                a.link href="https://webdesign.tutsplus.com/articles/start-using-quotation-marks-the-correct-way--webdesign-16905" title="tutsplus" 
+                                                a.link href="https://webdesign.tutsplus.com/articles/start-using-quotation-marks-the-correct-way--webdesign-16905" title="tutsplus" rel="nofollow noopener" 
                                                     | Start Using Quotation Marks the “Correct” Way
                                             li.links__item
-                                                a.link href="https://www.artlebedev.ru/kovodstvo/sections/104/" title="Артемий Лебедев" lang="ru"
+                                                a.link href="https://www.artlebedev.ru/kovodstvo/sections/104/" title="Артемий Лебедев" lang="ru" rel="nofollow noopener"
                                                     | § 104. Кавычки
                                             li.links__item
-                                                a.link href="https://www.artlebedev.ru/kovodstvo/sections/62/" title="Артемий Лебедев" lang="ru"
+                                                a.link href="https://www.artlebedev.ru/kovodstvo/sections/62/" title="Артемий Лебедев" lang="ru" rel="nofollow noopener"
                                                     | § 62. Экранная типографика
                                             li.links__item
-                                                a.link href="https://en.wikipedia.org/wiki/Quotation_mark#Unicode_code_point_table" title="wikipedia" 
+                                                a.link href="https://en.wikipedia.org/wiki/Quotation_mark#Unicode_code_point_table" title="wikipedia" rel="nofollow noopener" 
                                                     | Unicode code point table
                                             li.links__item
-                                                a.link href="https://www.artlebedev.ru/kovodstvo/sections/120/" title="Артемий Лебедев" lang="ru"
+                                                a.link href="https://www.artlebedev.ru/kovodstvo/sections/120/" title="Артемий Лебедев" lang="ru" rel="nofollow noopener"
                                                     | § 120. Висячая пунктуация
                                             li.links__item
-                                                a.link href="https://css-tricks.com/almanac/properties/h/hanging-punctuation/" title="CSS-Tricks" 
+                                                a.link href="https://css-tricks.com/almanac/properties/h/hanging-punctuation/" title="CSS-Tricks" rel="nofollow noopener" 
                                                     | hanging-punctuation
                                             li.links__item
                                                 a.link href="https://practice.typekit.com/lesson/" title="typekit.com" rel="nofollow noopener"
@@ -311,8 +350,9 @@ html lang="en"
                                             li.links__item
                                                 a.link href="https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens" title="MDN" rel="nofollow noopener"
                                                     | hyphens
-                            .caniuseit
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-violet Can I use it?
+                            section.caniuseit
+                                .grid__sub-header.grid__sub-header_caniuseit
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Can I use it?
                                 nav
                                     ol.links
                                         li.links__item
@@ -327,32 +367,43 @@ html lang="en"
                                             a.link href="https://caniuse.com/#feat=mdn-css_properties_quotes" rel="nofollow noopener" CSS property: quotes
                                         li.links__item
                                             a.link href="https://caniuse.com/#feat=css-hyphens" rel="nofollow noopener" CSS Hyphenation
-			section.grid.grid_section#tables
-                header.grid.grid_header.heading_zilla
-				    h2.heading.heading_2.row_width-80 Tables
-                main.grid.grid_main
-                    iframe.row_width-80.iframe_code width="100%" height="100%" src="//jsfiddle.net/meisloafer/3r4kLgzp/4/embedded/html,css,result/" allowfullscreen="allowfullscreen" allowpaymentrequest="true" frameborder="0"
+			article#tables.grid.grid_article
+                header.grid.grid_header.grid__header.grid__header_article
+                    .row.row_width-80
+				        h2.heading.heading_zilla.heading_zilla-xs Tables
+                section.grid.grid_main
+                    .row.row_width-80
+                        a.link.link_iframe href="https://jsfiddle.net/meisloafer/3r4kLgzp/4/" rel="nofollow noopener" title="Open this code example at jsfiddle.net" Open in JSFiddle
+                        iframe.iframe.iframe_code src="https://jsfiddle.net/meisloafer/3r4kLgzp/4/embedded/html,css,result/" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer" title="Example of Accessible Tables. Hosted at jsfiddle.net"
+                        noscript
+                            | https://jsfiddle.net/meisloafer/3r4kLgzp/4/
                 footer
-                    .row_width-80
-                        .grid.grid_footer
-                            .usage_notes
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                     .row.row_width-80
+                         .grid.grid_footer
+                            section.usage_notes
+                                .grid__sub-header.grid__sub-header_usage-notes
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Usage notes
                                 article.text.text_ubuntu
                                     ol.links
                                         li.links__item
-                                            p.block_inline.text_strong Are tables flexible?
+                                            p.block.block_inline
+                                                strong.strong Are tables flexible?
                                             p Yes, they are. You can find the torrent of table variants.
                                         li.links__item
-                                            p.block_inline.text_strong How to use them properly nowadays?
+                                            p.block.block_inline
+                                                strong.strong How to use them properly nowadays?
                                             p The only rule: make them look as if they are in a book and read the getting started post by Adrian Roselli.
                                         li.links__item
-                                            p.block_inline.text_strong Can tables be responsive?
+                                            p.block.block_inline
+                                                strong.strong Can tables be responsive?
                                             p Sure. And the answer can be flexible. There are data best to be presented as a list, image, separate table. The Responsive Accessible Table article by Adrian Roselli helps us.
                                         li.links__item
-                                            p.block_inline.text_strong What is the list of steps for me? And how can I use JavaScript?
+                                            p.block.block_inline
+                                                strong.strong What is the list of steps for me? And how can I use JavaScript?
                                             p A Complete Guide to the Table Element by Chris Coyier covers all the table questions.
-                            .see_also
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
+                            section.see-also
+                                .grid__sub-header.grid__sub-header_see-also
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Links
                                 .row
                                     nav
                                         ol.links
@@ -371,16 +422,22 @@ html lang="en"
                                             li.links__item
                                                 a.link href="https://css-tricks.com/complete-guide-table-element/" rel="nofollow noopener" title="Chris Coyier @ css-tricks"
                                                     | A Complete Guide to the Table Element
-			section.grid.grid_section#print
-                header.grid.grid_header.heading_zilla
-				    h2.heading.heading_2.row_width-80 Print
-                main.grid.grid_main
-                    iframe.row_width-80.iframe_code width="100%" height="100%" src="//jsfiddle.net/meisloafer/sbeur0gd/1/embedded/css/" allowfullscreen="allowfullscreen" allowpaymentrequest="true" frameborder="0"
+			article#print.grid.grid_article
+                header.grid.grid_header.grid__header.grid__header_article
+                    .row.row_width-80
+				        h2.heading.heading_zilla.heading_zilla-xs Print
+                section.grid.grid_main
+                    .row.row_width-80
+                        a.link.link_iframe href="https://jsfiddle.net/meisloafer/sbeur0gd/1/" rel="nofollow noopener" title="Open this code example at jsfiddle.net" Open in JSFiddle
+                        iframe.iframe.iframe_code src="https://jsfiddle.net/meisloafer/sbeur0gd/1/embedded/css/" allowfullscreen="allowfullscreen" loading="lazy" referrerpolicy="no-referrer" title="Example of Accessible Print Friendly pages. Hosted at jsfiddle.net"
+                        noscript
+                            | https://jsfiddle.net/meisloafer/sbeur0gd/1/
                 footer
-                    .row_width-80
+                    .row.row_width-80
                         .grid.grid_footer
-                            .see_also
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
+                            section.see-also
+                                .grid__sub-header.grid__sub-header_see-also
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Links
                                 .row
                                     nav
                                         ol.links
@@ -396,8 +453,9 @@ html lang="en"
                                             li.links__item
                                                 a.link href="https://css-tricks.com/snippets/css/monotone-image-css/" rel="nofollow noopener" title="css-tricks"
                                                     | Monotone an Image with CSS
-                            .caniuseit
-                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-violet Can I use it?
+                            section.caniuseit
+                                .grid__sub-header.grid__sub-header_caniuseit
+                                    h3.heading.heading_zilla-light.heading_zilla-xxs Can I use it?
                                 nav
                                     ol.links
                                         li.links__item
