@@ -18,7 +18,7 @@ html lang="en"
 		a.screen-reader-text.link href="#links"
 				| Skip to Content (Press Enter)
 		header.grid.grid_website-header
-            a.link href="https://tolerant.site/" title="Main Page"
+            a.link href="/" title="Main Page"
                 h1.heading.heading_1.text_lowercase.text_zilla.text_center Tolerant dot Site
             nav.grid__cell_center
                 ul.menu
@@ -123,6 +123,61 @@ html lang="en"
                 footer
                     .row_width-80
                         .grid.grid_footer
+                            .usage_notes
+                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                                article.text.text_ubuntu
+                                    ol.links
+                                        li.links__item
+                                            p.block_inline.text_strong I know &lt;img&gt; what else?
+                                            p HTML5 introduced &lt;figure&gt; element. This is standard for images.
+                                            p MDN Example:
+                                            pre.prettyprint
+                                                code.code
+                                                    |
+                                                        &lt;figure&gt;
+                                                            &lt;img src="/media/examples/elephant-660-480.jpg"
+                                                                alt="Elephant at sunset"&gt;
+                                                            &lt;figcaption&gt;An elephant at sunset&lt;/figcaption&gt;
+                                                        &lt;/figure&gt;
+                                        li.links__item
+                                            p.block_inline.text_strong I'm confused with alternative text. W3C doesn't help. What and where should I write?
+                                            p What — I've read WebAim article. They don't give abstract examples but teach you writing proper alt texts.
+                                            p Where — Scott O'Hara`s article shows us the way.
+                                            p Final example:
+                                            pre.prettyprint
+                                                code.code
+                                                    |
+                                                        &lt;figure role="figure" aria-label="repeat figcaption content here"&gt;
+                                                            &lt;!-- figure content. if an image, provide alt text --&gt;
+                                                            &lt;figcaption&gt;
+                                                                Caption for the figure.
+                                                            &lt;/figcaption&gt;
+                                                        &lt;/figure&gt;
+
+                                                        &lt;!--
+                                                        aria-label for macOS VoiceOver + Chrome
+                                                        role="figure" for IE11.
+
+                                                        IE11 needs an accessible name (provided by aria-label).
+                                                        If not for the fact VO + Chrome doesn't support an
+                                                        accessible name from aria-labelledby, that attribute
+                                                        would have been preferred / pointed to an ID on 
+                                                        the &lt;figcaption&gt;.
+                                                        --&gt;
+                                        li.links__item
+                                            p.block_inline.text_strong How to make my images print-friendly?
+                                            p I use filter property. So images are black and white.
+                                            p Example:
+                                            pre.prettyprint
+                                                code.code
+                                                    |
+                                                        @media print {
+                                                            .figure__img {
+                                                                filter: gray;
+                                                                -webkit-filter: grayscale(1);
+                                                                filter: grayscale(1);
+                                                            }
+                                                        }
                             .see_also
                                 h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
                                 .row
@@ -150,6 +205,38 @@ html lang="en"
                 footer
                     .row_width-80
                         .grid.grid_footer
+                            .usage_notes
+                                h3.heading.heading_3.text_zilla.border_zilla.border_zilla-blue Usage notes
+                                article.text.text_ubuntu
+                                    h4.heading.heading_4 What makes forms inaccessible?
+                                    ol.links
+                                        li.links__item
+                                            p CAPTHCA. It's 100% inaccessible for disabled people, 100% inaccessible for ad blocker and VPN users and 100% annoying for anyone else.
+                                            blockquote Imagine you buy yogurt and shop assistant asks you if you're robot
+                                            p Why do we forgive such distrust of sites?
+                                            p If you cannot live without making your users` life harder, please find CAPTCHA alternatives.
+                                        li.links__item
+                                            p Fields are not accessible via Tab. Label form controls properly and hardly ever change Tab order.
+                                        li.links__item
+                                            p Hidden Errors. Website's telling me I'm wrong and should redo work. Who obeys who? Provide polite notifications.
+                                        li.links__item
+                                            p Is it a checkbox or a bird? Default browser's fields appearance can not fit your website design. But don't forget they are the design standard. You can decorate it, but not to alter.
+                                        li.links__item
+                                            p Forms don't remember us.
+                                            blockquote
+                                                |
+                                                    — How much is banana yogurt?
+                                                    — 43
+                                                    — and cherry?
+                                                    — 48
+                                                    — then banana one
+                                                    — What is banana?
+                                            p Why do we forgive sites for their forgetfulness?
+                                            p The form should “remember” everything user put in it. Do not force the user to do all the work again after an error, reloading or accidentally closing the page.
+                                        li.links__item
+                                            p Uncertainty. If I check it, do I enable or disable it?
+                                            p Action form controls labels — always a verb — and it must correspond to the action that will occur when a button is pressed, box is checked, etc.
+
                             .see_also
                                 h3.heading.heading_3.text_zilla.border_zilla.border_zilla-red Links
                                 .row
@@ -329,10 +416,3 @@ html lang="en"
                     li.menu__item
                         a.link href="https://github.com/AlexeyVolkov/AlexeyVolkov.github.io" rel="nofollow noopener" title="AlexeyVolkov.github.io" This project at GitHub
 		script src="js/script-min.js"
-		script src="https://cdn.jsdelivr.net/gh/AlexeyVolkov/rememberForm@1.0/rememberForm.min.js"
-		script
-			|
-				ready(function(){
-					rememberForm('#form');
-				});
-
