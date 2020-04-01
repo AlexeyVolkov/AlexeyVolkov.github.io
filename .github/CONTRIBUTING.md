@@ -65,3 +65,7 @@ So change them.
 ### HTML
 
 [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+
+### CSS
+
+[Idea — BEM](https://en.bem.info/)
