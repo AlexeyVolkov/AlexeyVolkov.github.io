@@ -17,7 +17,10 @@ The following is a set of guidelines for contributing to Tolerant site on GitHub
 [Styleguides](#styleguides)
 
 - [Git Commit Messages](#git-commit-messages)
-- [Git Commit Messages](#html)
+- [HTML](#html)
+- [CSS](#css)
+
+- [Tests](#tests)
 
 ## Code of Conduct
 
@@ -70,3 +73,7 @@ So change them.
 
 [Idea — BEM](https://en.bem.info/)
 [Headings by Zilla](https://mozilla.design/mozilla/typography/)
+
+## Tests
+
+[Accessibility Checker and Validator](https://www.powermapper.com/products/sortsite/checks/accessibility-checks/)
