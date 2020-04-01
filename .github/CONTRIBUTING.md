@@ -69,3 +69,4 @@ So change them.
 ### CSS
 
 [Idea — BEM](https://en.bem.info/)
+[Headings by Zilla](https://mozilla.design/mozilla/typography/)
