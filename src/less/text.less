@@ -310,6 +310,7 @@
 	min-width: 20rem;
 	max-width: 60rem;
 	overflow: auto;
+	padding: 0.5rem;
 
 	page-break-inside: avoid;
 	break-inside: avoid;
@@ -317,8 +318,9 @@
 	line-height: 1.2;
 	word-wrap: break-word;
 
+	background-color: #f3f5f6 !important;
+	border: thin solid @row__heading_border_color;
 	border-left: medium solid @zilla_blue;
-	background-color: @row__heading_background_color !important;
 
 	&:focus {
 		outline: thick solid @black;
