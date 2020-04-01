@@ -1,0 +1,17 @@
+.iframe {
+	border: none;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+	display: block;
+
+	&:before {
+		content: "attr(src)";
+		width: 100%;
+		height: 0.2rem;
+		display: block;
+	}
+}
+.iframe_code {
+	border: thin solid @row__heading_border_color;
+}

@@ -38,11 +38,24 @@
 		url("/fonts/ZillaSlab/ZillaSlab-Regular.ttf") format("truetype"),
 		url("/fonts/ZillaSlab/ZillaSlab-Regular.otf") format("opentype");
 }
+@font-face {
+	font-family: "ZillaSlab Bold";
+	font-display: fallback;
+	font-variant-ligatures: common-ligatures;
+	font-feature-settings: "onum", "tnum", "zero";
+	font-variant-numeric: tabular-nums slashed-zero oldstyle-nums;
+	src: local("ZillaSlab Bold"),
+		url("/fonts/ZillaSlab/ZillaSlab-Bold.woff2") format("woff2"),
+		url("/fonts/ZillaSlab/ZillaSlab-Bold.woff") format("woff"),
+		url("/fonts/ZillaSlab/ZillaSlab-Bold.ttf") format("truetype"),
+		url("/fonts/ZillaSlab/ZillaSlab-Bold.otf") format("opentype");
+}
 @arial: Verdana, Arial, Helvetica, sans-serif;
 @times: "Times New Roman", Georgia, serif;
 @mono: "JetBrains Mono", Consolas, Courier, monospace;
 @ubuntu: "Ubuntu", Verdana, Arial, Helvetica, sans-serif;
-@zilla: "ZillaSlab", Verdana, Arial, Helvetica, sans-serif;
+@zilla: "ZillaSlab", "Times New Roman", Georgia, serif;
+@zilla_bold: "ZillaSlab Bold", "Times New Roman", Georgia, serif;
 
 /**
   * Media Points

@@ -30,114 +30,6 @@
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
-.link {
-	color: inherit;
-	text-decoration: underline;
-	text-decoration-color: #3344dd;
-	text-decoration-skip: edges;
-	text-decoration-skip-ink: auto;
-	text-decoration-line: underline;
-	text-decoration-style: solid;
-	text-decoration-thickness: 0.1em;
-	padding: 0 0.2rem;
-
-	&:hover {
-		background-color: rgba(75%, 75%, 75%, 0.25);
-		text-decoration-thickness: 0.2em;
-		text-decoration-color: #bb1122;
-	}
-
-	&:active {
-		text-decoration-thickness: 0.25em;
-		text-decoration-color: #bb1122;
-	}
-
-	&:focus {
-		background-color: @black;
-		color: @white;
-		text-decoration-thickness: 0.25em;
-		text-decoration-color: #bb1122;
-		outline: none;
-	}
-
-	@media print {
-		&[href^="http"]:after {
-			content: " [" attr(href) "] ";
-		}
-		text-decoration: none;
-	}
-}
-.link__span_arrow {
-	&:after {
-		content: "\25BC";
-		color: @black;
-		padding: 0.6rem;
-		border: thin solid #e9e9e9;
-	}
-}
-.heading {
-	margin: 0;
-	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.004);
-
-	@media (min-width: @desktop) {
-		font-weight: 100;
-	}
-}
-.heading_1 {
-	font-size: 2rem;
-	@media (min-width: @ipad) {
-		font-size: 2.5rem;
-	}
-	@media (min-width: @desktop) {
-		font-size: 3rem;
-	}
-}
-.heading_2 {
-	font-size: 1.75rem;
-	@media (min-width: @ipad) {
-		font-size: 2.25rem;
-	}
-	@media (min-width: @desktop) {
-		font-size: 2.75rem;
-	}
-}
-.heading_3 {
-	font-size: 1.5rem;
-	@media (min-width: @ipad) {
-		font-size: 2rem;
-	}
-	@media (min-width: @desktop) {
-		font-size: 2.5rem;
-	}
-}
-.heading_4 {
-	font-size: 1.25rem;
-	@media (min-width: @ipad) {
-		font-size: 1.75rem;
-	}
-	@media (min-width: @desktop) {
-		font-size: 2rem;
-	}
-}
-
-.heading_zilla {
-	font-family: @zilla;
-	line-height: 1;
-	padding: 1rem 0;
-
-	background-color: @row__heading_background_color;
-	color: @black;
-	border-top: thin solid @row__heading_border_color;
-	border-bottom: thin solid @row__heading_border_color;
-
-	// @media (prefers-color-scheme: dark) {
-	// 	background-color: @black;
-	// 	color: @white;
-	// }
-}
 
 .links {
 	margin: 0;
@@ -224,9 +116,6 @@
 }
 .text_italic {
 	font-style: italic;
-}
-.text_strong {
-	font-weight: 900;
 }
 .text_zilla {
 	font-family: @zilla;
@@ -331,32 +220,5 @@
 		border: thin solid black;
 		padding: 0.4rem 0;
 		border: none;
-	}
-}
-.border_zilla {
-	&:after {
-		content: "";
-		width: 100%;
-		height: 0.2rem;
-		display: block;
-
-		@media print {
-			content: none;
-		}
-	}
-}
-.border_zilla-red {
-	&:after {
-		background: linear-gradient(to left, #c60184, #e17f2e);
-	}
-}
-.border_zilla-blue {
-	&:after {
-		background: linear-gradient(to left, #712290, #00b3f5);
-	}
-}
-.border_zilla-violet {
-	&:after {
-		background: linear-gradient(to left, #2b1141, #ff6bbb);
 	}
 }
