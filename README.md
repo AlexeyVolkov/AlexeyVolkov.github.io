@@ -1,6 +1,4 @@
-![tolerant site banner](https://volkov.best/images/Website_Accessibility_Code_Examples.png)
-
-## tolerant site
+## [CSS collection](https://alexeyvolkov.github.io/)
 
 Project collects best accessability practices and cutting-edge CSS HTML technologies
 
