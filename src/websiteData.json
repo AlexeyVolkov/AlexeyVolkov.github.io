@@ -1,0 +1,38 @@
+{
+  "name": "You might not need old Web Methods - Accessible Code Examples",
+  "description": "Best accessability practices and cutting-edge CSS HTML technologies",
+  "methods": [
+    {
+      "name": "links",
+      "title": "Links",
+      "old-code-url": "//jsfiddle.net/meisloafer/v9rqf2ey/24/embed/html,css,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/v9rqf2ey/24/embed/html,css,result/dark/",
+      "links": [
+        {
+          "links": [
+            {
+              "href": "https://jsfiddle.net/meisloafer/v9rqf2ey/24/",
+              "text": "Open this code example at jsfiddle.net"
+            }
+          ]
+        },
+        {
+          "title": "Link Styling",
+          "links": [
+            {
+              "href": "https://www.deque.com/blog/give-site-focus-tips-designing-usable-focus-indicators/",
+              "text": "Designing Focus Indicators",
+              "title": "Caitlin Geier is a UX designer at deque.com"
+            }
+          ]
+        }
+      ],
+      "can-i-use-it": [
+        {
+          "href": "https://caniuse.com/#feat=text-decoration",
+          "text": "text-decoration styling"
+        }
+      ]
+    }
+  ]
+}
