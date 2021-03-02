@@ -1,2 +1,0 @@
-function ready(e){"loading"!=document.readyState?e():document.addEventListener?document.addEventListener("DOMContentLoaded",e):document.attachEvent("onreadystatechange",(function(){"loading"!=document.readyState&&e()}))}
-//# sourceMappingURL=script-min.js.map
