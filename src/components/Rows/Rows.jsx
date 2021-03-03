@@ -2,9 +2,9 @@ import Row from './Row'
 
 function Rows(props) {
   return (
-    <dl>
+    <dl className="container">
       {props.rows.map((row) => (
-        <Row row={row} />
+        <Row row={row} key={row.name} />
       ))}
     </dl>
   )
