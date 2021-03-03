@@ -1,13 +1,13 @@
-import React from 'react'
-import './App.css'
+import './styles/App.scss'
 import jsonData from './websiteData.json'
 import Rows from './components/Rows/Rows'
+import Header from './components/Header/Header'
 
 function App() {
   return (
-    <React.Fragment>
-      <header>
-        <h1>{jsonData.name}</h1>
+    <>
+      <header className="container">
+        <Header methods={jsonData.methods} />
       </header>
       <main>
         <Rows rows={jsonData.methods} />
@@ -44,7 +44,7 @@ function App() {
           </li>
         </ul>
       </footer>
-    </React.Fragment>
+    </>
   )
 }
 
