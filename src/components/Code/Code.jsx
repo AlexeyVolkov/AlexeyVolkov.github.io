@@ -8,7 +8,7 @@ function Code(props) {
     script.async = true
     codeElement.current.appendChild(script)
   })
-  return <code ref={codeElement} />
+  return <code ref={codeElement} className={props.className} />
 }
 
 export default Code
