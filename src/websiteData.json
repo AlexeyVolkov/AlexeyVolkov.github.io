@@ -111,8 +111,8 @@
     {
       "name": "forms",
       "title": "Forms",
-      "old-code-url": "https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/",
-      "new-code-url": "https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/dark/",
+      "old-code-url": "//jsfiddle.net/meisloafer/unwfL8pk/5/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/p6efvwyL/50/embed/html,result/",
       "links": [
         {
           "links": [
@@ -144,8 +144,8 @@
     {
       "name": "articles",
       "title": "Articles",
-      "old-code-url": "https://jsfiddle.net/meisloafer/nhsr85fc/7/embedded/html,css,result/",
-      "new-code-url": "https://jsfiddle.net/meisloafer/nhsr85fc/7/embedded/html,css,result/dark/",
+      "old-code-url": "//jsfiddle.net/meisloafer/2dwhxbmy/1/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/nhsr85fc/9/embed/html,css,result/",
       "links": [
         {
           "links": [
@@ -204,8 +204,8 @@
     {
       "name": "tables",
       "title": "Tables",
-      "old-code-url": "https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/",
-      "new-code-url": "https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/dark/",
+      "old-code-url": "//jsfiddle.net/meisloafer/uc6o4kzp/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/3r4kLgzp/6/embed/html,css,result/",
       "links": [
         {
           "links": [
@@ -233,38 +233,6 @@
               "href": "https://css-tricks.com/complete-guide-table-element/",
               "title": "Chris Coyier @ css-tricks",
               "text": "A Complete Guide to the Table Element"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "print",
-      "title": "Print",
-      "old-code-url": "https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/",
-      "new-code-url": "https://jsfiddle.net/meisloafer/p6efvwyL/5/embedded/html,css,result/dark/",
-      "links": [
-        {
-          "links": [
-            {
-              "href": "https://css-tricks.com/css-tricks-finally-gets-a-print-stylesheet/",
-              "text": "CSS-Tricks",
-              "title": "CSS-Tricks Finally Gets A Print Stylesheet"
-            },
-            {
-              "href": "https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/",
-              "title": "smashingmagazine",
-              "text": "Printing almost real book"
-            },
-            {
-              "href": "https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/",
-              "title": "smashingmagazine",
-              "text": "A Guide To The State Of Print Stylesheets In 2018"
-            },
-            {
-              "href": "https://css-tricks.com/snippets/css/monotone-image-css/",
-              "title": "css-tricks",
-              "text": "Monotone an Image with CSS"
             }
           ]
         }
