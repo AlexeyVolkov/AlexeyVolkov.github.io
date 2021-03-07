@@ -7,9 +7,12 @@ function Row(props) {
         <h2>{props.row.title}</h2>
       </dt>
       <dd>
-        <section className="row">
-          <Code link={props.row['old-code-url']} className="col-12 col-sm-6" />
-          <Code link={props.row['new-code-url']} className="col-12 col-sm-6" />
+        <section className="row d-flex justify-content-around align-items-stretch">
+          <Code link={props.row['old-code-url']} className="col-12 col-sm-5" />
+          <Code
+            link={props.row['new-code-url']}
+            className="col-12 col-sm-6 border-secondary"
+          />
         </section>
         <section>
           <nav>
