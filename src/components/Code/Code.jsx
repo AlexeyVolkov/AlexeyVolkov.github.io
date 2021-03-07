@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import './Code.scss'
 
 function Code(props) {
-  const codeElement = useRef(null)
+  const codeElement = useRef()
   useEffect(() => {
     const script = document.createElement('script')
     script.src = props.link
