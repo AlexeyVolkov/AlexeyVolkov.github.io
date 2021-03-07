@@ -7,15 +7,14 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     <>
-      <header>
-        <Header methods={jsonData.methods} name={jsonData.name} />
-      </header>
+      <Header links={jsonData.methods} websiteName={jsonData.name} />
       <main>
         <Rows rows={jsonData.methods} />
       </main>
-      <footer className="footer mt-auto py-3 bg-light">
-        <Footer />
-      </footer>
+      <Footer
+        links={jsonData.footerLinks}
+        className="footer mt-auto py-3 bg-light"
+      />
     </>
   )
 }
