@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import PropTypes from 'prop-types'
 import './Code.scss'
 
 function Code(props) {
@@ -10,10 +11,15 @@ function Code(props) {
     codeElement.current.appendChild(script)
   })
   return (
-    <pre className={`${props.className} p-0 border rounded shadow-sm code`}>
+    <pre className={`${props.className} code`}>
       <code ref={codeElement} className="p-0 m-0" />
     </pre>
   )
+}
+
+Code.propTypes = {
+  className: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default Code

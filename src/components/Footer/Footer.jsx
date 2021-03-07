@@ -1,26 +1,29 @@
+import PropTypes from 'prop-types'
+
 function Footer(props) {
   return (
-    <ul class="nav justify-content-center">
-      <a
-        class="nav-link"
-        href="https://spb.hh.ru/resume/ff5930bbff033a8c5e0039ed1f47376b7a4d51"
-        rel="nofollow noopener"
-        lang="ru"
-        title="Резюме на hh.ru"
-      >
-        hh.ru
-      </a>
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          href="https://www.linkedin.com/in/2plus2is4/"
-          rel="nofollow noopener"
-          title="Hire in LinkedIn"
-        >
-          LinkedIn
-        </a>
-      </li>
-    </ul>
+    <footer className={props.className}>
+      <ul className="nav justify-content-center">
+        {props.links.map((link) => (
+          <li className="nav-item" key={link.href}>
+            <a
+              className="nav-link"
+              href={link.href}
+              rel="nofollow noopener"
+              title={link.title}
+            >
+              {link.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </footer>
   )
 }
+
+Footer.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.object),
+  className: PropTypes.string,
+}
+
 export default Footer

@@ -238,5 +238,17 @@
         }
       ]
     }
+  ],
+  "footerLinks": [
+    {
+      "href": "https://spb.hh.ru/resume/ff5930bbff033a8c5e0039ed1f47376b7a4d51",
+      "text": "hh.ru",
+      "title": "Резюме на hh.ru"
+    },
+    {
+      "href": "https://www.linkedin.com/in/2plus2is4/",
+      "text": "LinkedIn",
+      "title": "Hire me!"
+    }
   ]
 }
