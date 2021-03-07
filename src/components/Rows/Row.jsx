@@ -8,15 +8,26 @@ function Row(props) {
       </dt>
       <dd>
         <section className="row d-flex justify-content-around align-items-stretch">
-          <Code link={props.row['old-code-url']} className="col-12 col-sm-5" />
-          <Code
-            link={props.row['new-code-url']}
-            className="col-12 col-sm-6 border-secondary"
-          />
+          <div className="col-12 col-sm-4">
+            <h3>
+              <small class="text-muted">Inaccessible</small>
+            </h3>
+            <Code
+              link={props.row['old-code-url']}
+              className="d-none d-sm-block"
+            />
+          </div>
+          <div className="col-12 col-sm-7">
+            <h3>Accessible</h3>
+            <Code
+              link={props.row['new-code-url']}
+              className="border-secondary"
+            />
+          </div>
         </section>
         <section>
           <nav>
-            <h3>Resources</h3>
+            <h4>Resources</h4>
             <div className="row">
               {props.row.links.map((linkSection) => {
                 return (
