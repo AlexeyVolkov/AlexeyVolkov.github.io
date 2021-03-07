@@ -3,7 +3,7 @@ import Code from '../Code/Code'
 function Row(props) {
   return (
     <>
-      <dt className={`col ${props.row.name}`}>
+      <dt className={`col ${props.row.name}`} id={props.row.name}>
         <h2>{props.row.title}</h2>
       </dt>
       <dd>
