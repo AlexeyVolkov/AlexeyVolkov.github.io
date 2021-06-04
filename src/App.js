@@ -1,22 +1,25 @@
-import './styles/App.scss'
-import jsonData from './websiteData.json'
-import Rows from './components/Rows/Rows'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Header links={jsonData.methods} websiteName={jsonData.name} />
-      <main>
-        <Rows rows={jsonData.methods} />
-      </main>
-      <Footer
-        links={jsonData.footerLinks}
-        className="footer mt-auto py-3 bg-light"
-      />
-    </>
-  )
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
-export default App
+export default App;
