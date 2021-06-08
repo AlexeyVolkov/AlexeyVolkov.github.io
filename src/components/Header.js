@@ -22,7 +22,7 @@ const Header = () => {
     )
 
   return (
-    <header>
+    <header data-testid='header'>
       <h1>{user.bio}</h1>
       {getAvatar()}
     </header>
