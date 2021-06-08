@@ -1,14 +1,30 @@
 import React from 'react'
-import { useUser } from '../utils/user'
-const username = process.env.REACT_APP_GITHUB_USERNAME
+import { useUser } from '../utils/github-fetch'
 
 const Header = () => {
-  const user = useUser(username)
-  console.log(user)
+  const { data: user, isLoading, error } = useUser()
+
+  if (isLoading) return <samp>Loading header...</samp>
+  if (error) return <samp>Cannot load header: {error.message}</samp>
+
+  const getAvatar = () =>
+    user.avatar_url ? (
+      <img
+        src={user.avatar_url}
+        alt={user.name}
+        decoding='async'
+        height='52'
+        width='52'
+        loading='lazy'
+      />
+    ) : (
+      <i>{user.name}</i>
+    )
+
   return (
     <header>
-      <h1>Hi, I'm {user.name}</h1>
-      <h3>{user.bio}</h3>
+      <h1>{user.bio}</h1>
+      {getAvatar()}
     </header>
   )
 }
