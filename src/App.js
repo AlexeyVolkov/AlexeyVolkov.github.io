@@ -1,21 +1,57 @@
 import React from 'react'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import RecentProjects from './components/RecentProjects'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useLocation,
+} from 'react-router-dom'
 
-const queryClient = new QueryClient()
+import PersonalWebsite from './components/PersonalWebsite'
+import AccessibilitySamples from './components/AccessibilitySamples'
+import { isConstructorDeclaration } from 'typescript'
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <div itemscope itemtype='https://schema.org/Person'>
-        <Header />
-        <RecentProjects />
-        <hr />
-        <Footer />
-      </div>
-    </QueryClientProvider>
+    <Router>
+      <Links />
+      <AppRoutes />
+    </Router>
+  )
+}
+
+const AppRoutes = () => (
+  <Switch>
+    <Route path='/accessibility'>
+      <AccessibilitySamples />
+    </Route>
+    <Route path='/'>
+      <PersonalWebsite />
+    </Route>
+  </Switch>
+)
+
+const Links = () => {
+  const location = useLocation()
+  return (
+    <nav>
+      <ul>
+        <li>
+          {location.pathname === '/' ? (
+            <strong>Homepage</strong>
+          ) : (
+            <Link to='/'>Homepage</Link>
+          )}
+        </li>
+        <li>
+          {location.pathname === '/accessibility' ? (
+            <strong>Accessibility Code Samples</strong>
+          ) : (
+            <Link to='/accessibility'>Accessibility Code Samples</Link>
+          )}
+        </li>
+      </ul>
+    </nav>
   )
 }
 
