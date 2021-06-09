@@ -1,0 +1,242 @@
+{
+  "title": "You might not need Inaccessibility - Code Examples",
+  "name": "Inaccessibility",
+  "description": "Best accessability practices and cutting-edge CSS HTML technologies",
+  "methods": [
+    {
+      "name": "links",
+      "title": "Links",
+      "old-code-url": "//jsfiddle.net/meisloafer/a03d68wc/5/embed/",
+      "new-code-url": "//jsfiddle.net/meisloafer/v9rqf2ey/55/embed/html,css,result/",
+      "links": [
+        {
+          "title": "Link Styling",
+          "links": [
+            {
+              "href": "https://www.deque.com/blog/give-site-focus-tips-designing-usable-focus-indicators/",
+              "text": "Designing Focus Indicators",
+              "title": "Caitlin Geier is a UX designer at deque.com"
+            },
+            {
+              "href": "https://css-tricks.com/styling-underlines-web/",
+              "title": "css-tricks",
+              "text": "Styling Underlines on the Web"
+            }
+          ]
+        },
+        {
+          "title": "E-Mail link",
+          "links": [
+            {
+              "href": "https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/",
+              "title": "jitbit.com - Target=\"_blank\" - the most underestimated vulnerability ever",
+              "text": "Use target=\"_blank\" ... never"
+            },
+            {
+              "href": "https://webaim.org/techniques/hypertext/hypertext_links",
+              "title": "WebAIM - Links and Hypertext",
+              "text": "WebAIM: Links"
+            },
+            {
+              "href": "https://webaim.org/blog/wcag-2-0-and-link-colors/",
+              "title": "WebAIM - WCAG 2.0 and Link Colors",
+              "text": "WCAG 2.0 Link Colors"
+            },
+            {
+              "href": "https://www.w3.org/TR/WCAG20-TECHS/G201.html",
+              "title": "W3C",
+              "text": "Warn users about target=\"_blank\""
+            },
+            {
+              "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector",
+              "title": "MDN",
+              "text": "Privacy and the :visited selector"
+            },
+            {
+              "href": "https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html",
+              "title": "Adrian Roselli | Consultant, Writer, Speaker",
+              "text": "Link Targets and 3.2.5"
+            }
+          ]
+        },
+        {
+          "title": "Accessible Drop-Down Menu",
+          "links": [
+            {
+              "href": "https://www.scottohara.me/blog/2017/05/14/focus-within.html",
+              "title": "Scott O'Hara",
+              "text": "Accessible Drop-Down Menu"
+            },
+            {
+              "href": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details",
+              "title": "MDN",
+              "text": "The Details disclosure element"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "images",
+      "title": "Images",
+      "old-code-url": "//jsfiddle.net/meisloafer/ok8qh3dp/4/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/v4z5k79o/12/embed/html,css,result/",
+      "links": [
+        {
+          "links": [
+            {
+              "href": "https://www.w3.org/TR/2014/WD-html-alt-techniques-20141023/#images-of-pictures-1",
+              "text": "W3C",
+              "title": "Techniques for providing useful text alternatives"
+            },
+            {
+              "href": "https://webaim.org/techniques/alttext/",
+              "title": "webaim",
+              "text": "Alt text in any cases"
+            },
+            {
+              "href": "https://www.scottohara.me/blog/2019/01/21/how-do-you-figure.html",
+              "title": "Scott O'Hara",
+              "text": "How do you figure?"
+            },
+            {
+              "href": "https://css-tricks.com/using-svg/",
+              "title": "css-tricks.com",
+              "text": "Using SVG"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "forms",
+      "title": "Forms",
+      "old-code-url": "//jsfiddle.net/meisloafer/unwfL8pk/5/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/p6efvwyL/50/embed/html,result/",
+      "links": [
+        {
+          "links": [
+            {
+              "href": "https://www.w3.org/WAI/tutorials/forms/",
+              "text": "W3C - Forms",
+              "title": "WCAG Forms"
+            },
+            {
+              "href": "https://webaim.org/techniques/forms/#keyboard",
+              "title": "WebAIM - Creating Accessible Forms",
+              "text": "WebAIM: Keyboard Accessible"
+            },
+            {
+              "href": "https://webaim.org/techniques/forms/advanced",
+              "title": "WebAIM - Creating Accessible Forms",
+              "text": "WebAIM: Labels"
+            },
+            {
+              "href": "https://www.artlebedev.ru/technogrette/etc/forms/",
+              "title": "Студия Артемия Лебедева",
+              "text": "10 правил хороших форм",
+              "lang": "ru"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "articles",
+      "title": "Articles",
+      "old-code-url": "//jsfiddle.net/meisloafer/2dwhxbmy/1/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/nhsr85fc/9/embed/html,css,result/",
+      "links": [
+        {
+          "links": [
+            {
+              "href": "https://www.w3.org/WAI/tutorials/page-structure/content/",
+              "text": "W3C",
+              "title": "Content Structure"
+            },
+            {
+              "href": "https://webdesign.tutsplus.com/articles/start-using-quotation-marks-the-correct-way--webdesign-16905",
+              "title": "tutsplus",
+              "text": "Start Using Quotation Marks the “Correct” Way"
+            },
+            {
+              "href": "https://www.artlebedev.ru/kovodstvo/sections/104/",
+              "title": "Артемий Лебедев",
+              "text": "§ 104. Кавычки",
+              "lang": "ru"
+            },
+            {
+              "href": "https://www.artlebedev.ru/kovodstvo/sections/62/",
+              "title": "Артемий Лебедев",
+              "text": "§ 62. Экранная типографика",
+              "lang": "ru"
+            },
+            {
+              "href": "https://en.wikipedia.org/wiki/Quotation_mark#Unicode_code_point_table",
+              "title": "wikipedia",
+              "text": "Unicode code point table"
+            },
+            {
+              "href": "https://www.artlebedev.ru/kovodstvo/sections/120/",
+              "text": "§ 120. Висячая пунктуация",
+              "title": "Артемий Лебедев",
+              "lang": "ru"
+            },
+            {
+              "href": "https://css-tricks.com/almanac/properties/h/hanging-punctuation/",
+              "title": "CSS-Tricks",
+              "text": "hanging-punctuation"
+            },
+            {
+              "href": "https://practice.typekit.com/lesson/",
+              "title": "typekit.com",
+              "text": "Typekit Practice Lessons"
+            },
+            {
+              "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens",
+              "title": "MDN",
+              "text": "hyphens"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tables",
+      "title": "Tables",
+      "old-code-url": "//jsfiddle.net/meisloafer/uc6o4kzp/embed/html,result/",
+      "new-code-url": "//jsfiddle.net/meisloafer/3r4kLgzp/6/embed/html,css,result/",
+      "links": [
+        {
+          "links": [
+            {
+              "href": "https://www.w3.org/WAI/tutorials/tables/",
+              "text": "Web Accessibility Tutorials",
+              "title": "Tables Concepts"
+            },
+            {
+              "href": "https://adrianroselli.com/2017/11/hey-its-still-ok-to-use-tables.html",
+              "title": "Adrian Roselli | Consultant, Writer, Speaker",
+              "text": "Hey, It’s Still OK to Use Tables"
+            },
+            {
+              "href": "https://adrianroselli.com/2017/11/a-responsive-accessible-table.html",
+              "title": "Adrian Roselli | Consultant, Writer, Speaker",
+              "text": "A Responsive Accessible Table"
+            },
+            {
+              "href": "https://alistapart.com/article/web-typography-tables",
+              "title": "alistapart.com",
+              "text": "Designing Tables to be Read, Not Looked At"
+            },
+            {
+              "href": "https://css-tricks.com/complete-guide-table-element/",
+              "title": "Chris Coyier @ css-tricks",
+              "text": "A Complete Guide to the Table Element"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
