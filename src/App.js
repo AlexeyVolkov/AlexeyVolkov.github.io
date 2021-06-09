@@ -9,7 +9,6 @@ import {
 
 import PersonalWebsite from './components/PersonalWebsite'
 import AccessibilitySamples from './components/AccessibilitySamples'
-import { isConstructorDeclaration } from 'typescript'
 
 function App() {
   return (
