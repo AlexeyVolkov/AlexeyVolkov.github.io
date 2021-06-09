@@ -14,7 +14,7 @@ const Footer = () => {
         {user.email && (
           <li>
             📧{' '}
-            <a href={`mailto:${user.email}`} itemprop='email'>
+            <a href={`mailto:${user.email}`} itemProp='email'>
               {user.email}
             </a>
           </li>
@@ -22,7 +22,7 @@ const Footer = () => {
         {user.blog && (
           <li>
             💼{' '}
-            <a href={user.blog} itemprop='url'>
+            <a href={user.blog} itemProp='url'>
               Website
             </a>
           </li>
@@ -30,7 +30,7 @@ const Footer = () => {
         {user.html_url && (
           <li>
             🐙{' '}
-            <a href={user.blog} itemprop='url'>
+            <a href={user.blog} itemProp='url'>
               GitHub
             </a>
           </li>

@@ -21,10 +21,10 @@ const Header = () => {
         height='52'
         width='52'
         loading='lazy'
-        itemprop='image'
+        itemProp='image'
       />
     ) : (
-      <i itemprop='name'>{user.name}</i>
+      <i itemProp='name'>{user.name}</i>
     )
 
   return (
