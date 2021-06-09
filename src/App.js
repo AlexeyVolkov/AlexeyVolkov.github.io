@@ -9,10 +9,12 @@ const queryClient = new QueryClient()
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Header />
-      <RecentProjects />
-      <hr />
-      <Footer />
+      <div itemscope itemtype='https://schema.org/Person'>
+        <Header />
+        <RecentProjects />
+        <hr />
+        <Footer />
+      </div>
     </QueryClientProvider>
   )
 }

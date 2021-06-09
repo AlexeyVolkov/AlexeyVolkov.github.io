@@ -22,14 +22,19 @@ const RecentProjects = () => {
       <dl>
         {sortedRepos.map((repo) => (
           <React.Fragment key={repo.id}>
-            <dt>
+            <dt
+              itemprop='workPerformed'
+              itemscope
+              itemtype='https://schema.org/SoftwareApplication'
+            >
               <a
                 href={repo.html_url}
                 title='Open GitHub link'
                 rel='nofollow noopener'
+                itemprop='name'
               >
                 {repo.name}
-              </a>{' '}
+              </a>
             </dt>
             <dd>{repo.description && repo.description}</dd>
           </React.Fragment>
