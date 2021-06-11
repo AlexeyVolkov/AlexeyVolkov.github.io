@@ -30,7 +30,7 @@ const Footer = () => {
         {user.html_url && (
           <li>
             🐙{' '}
-            <a href={user.blog} itemProp='url'>
+            <a href={user.html_url} itemProp='url'>
               GitHub
             </a>
           </li>
